@@ -1,0 +1,9 @@
+
+
+   [ 자바스크립트 이미지 롤오버 체인지 ]
+
+   onmouseover="this.src='바뀔이미지'"   // <=마우스를 올리면 '바뀔이미지' 로 이미지가 바뀜
+   onmouseout="this.src='바뀔이미지'"    //  <=마우스를 떠나면 '바뀔이미지' 로 이미지가 바뀜
+
+   ex)
+    <img src="http://duaxorms.dothome.co.kr/port/web/blog/print-02.jpg"           onmouseover="this.src='http://duaxorms.dothome.co.kr/port/web/blog/print-01.jpg'"                 onmouseout="this.src='http://duaxorms.dothome.co.kr/port/web/blog/print-02.jpg'">  

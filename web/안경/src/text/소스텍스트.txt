@@ -1,0 +1,21 @@
+
+ [ 프로젝트 1 텍스트 소스자료 - 1200GS ]
+
+1. header 영역
+
+  * Spectacles  /  Sunglasses  /  Accessories   /   Journal  /  Shops
+   * Login/Registor         Bag
+
+
+2.  Contents 영역
+
+  * Article Author  (author)      
+  * Posted on 09.07.2020 (date)
+  * Spectacle Craft  (title)
+  * Introduction Cubitts spectacle
+  * Herband's
+  * Mile working on a Flaxman frame at the  kings Cross shop
+  * Mila's certificte of qualification in spectacke making
+  * Thanks to QUST, and of course to Mila's hard work and skill, we're helping to revive a dying British industry. And we're doing it in style.
+ * share
+    -  Fb   Tw   Em

@@ -1,0 +1,405 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ********************** 전체 레이아웃 구성시작 ********************** */
+
+#navi{width: 100%; height: 63px;}
+#mainview{width: 100%; height: 651px;}
+#contents{width: 100%; height: auto;}
+#footer{width: 100%; height: 588px;}
+
+.container{width: 1170px; height: 100%; margin: auto;}
+
+
+/* ************************* 공통영역 선언시작 ************************ */
+
+/* 버튼 스타일 클래스 설정 */
+.btn{
+  display: block; width: 130px; height: 42px;
+  font:700 1.4rem/42px 'Nanum Gothic', sans-serif;
+  text-align: center; border-radius: 21px;
+  letter-spacing: 1px;
+}
+
+.btn1, .btn2{
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+
+.btn1{ border: 1px solid #fff; color: #fff; }
+.btn1:hover{ background-color: #fff; color: #222; }
+
+.btn2{ border: 1px solid #222; color: #222; }
+.btn2:hover{ background-color: #222; color: #fff; }
+
+
+/* ************************* 개별영역 선언시작 ************************ */
+
+/* ****************** Navi Area Start **************** */
+#navi{border-bottom: 1px solid #ccc; margin-bottom: 42px;}
+#navi .container{ position: relative; }
+
+/* Site logo */
+#navi h1{
+  width: 169px; height: 27px;
+
+  position: absolute; left: 50%; top: 50%;
+  
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#navi h1 a{
+  background-image: url(../images/logo.png);
+}
+
+
+/* Gnb */
+#navi .gnb{width: 400px; height: 63px; float: left;}
+#navi .gnb li{float: left; height: 63px;}
+#navi .gnb li a{
+  display: block; padding: 0 10px; height: 100%;
+  font:700 1.4rem/63px 'Nanum Gothic', sans-serif;
+}
+#navi .gnb li a:hover{color: #3f10fa; position: relative;}
+#navi .gnb li a:hover::after{
+  content: ''; width: 100%; height: 2px; 
+  background-color: #3f10fa;
+  position: absolute; left: 0; bottom: 0;
+}
+
+
+/* qmenu */
+#navi .qmenu{
+  width: 270px; height: 63px; float: right;
+  font:700 1.2rem/63px 'Nanum Gothic', sans-serif;
+}
+#navi .qmenu a:hover{ color: #c30; }
+
+#navi .qmenu>a:first-child{margin-right: 5px;}
+#navi .qmenu .icon-group{
+  display: inline-block; margin-left: 20px;
+  font-size: 1.8rem;
+}
+#navi .qmenu .icon-group a:nth-child(2){margin: 0 5px;}
+
+
+/* ****************** Mainview Area Start **************** */
+#mainview{
+  background: url(../images/mainimg.png) no-repeat top center;
+  color: #fff; 
+}
+#mainview .container{ padding: 126px 0 0 70px; }
+#mainview .caption{
+  width: 400px; height: 357px; 
+}
+#mainview .logo-box{
+  width: 130px; height: 126px; margin-bottom: 21px;
+  animation-delay: 0.1s;
+}
+#mainview h2{
+  font:700 5.4rem/1.2 'Nanum Gothic', sans-serif;
+  margin-bottom: 42px;
+  animation-delay: 0.7s;
+}
+#mainview .btn{ animation-delay: 1.2s; }
+
+
+/* ****************** Contents Area Start **************** */
+#contents>div{width: 100%;}
+
+/* ************* Product-select Area Start ************ */
+#contents #product-select{height: 819px; padding: 105px 0 84px;}
+
+/* p-title Area Start */
+#contents #product-select .p-title{
+  width: 100%; height: 84px; text-align: center; margin-bottom: 63px;
+}
+#contents #product-select .p-title h2{
+  width: 100%; height: 42px;
+  font:700 3.6rem/42px 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+}
+#contents #product-select .p-title p{
+  width: 100%; height: 21px; line-height: 21px;
+}
+#contents #product-select .p-title p a:hover{ color: #c30; }
+
+
+/* p-conent Area Start */
+/* 기존 플롯방식 :
+#contents #product-select .p-content{
+  width: 100%; height: 483px; text-align: center;
+}
+
+#contents #product-select .p-content>div{
+  width: 270px; height: 100%; float: left;
+  background-color: #f2f2f2; margin-right: 30px;
+}
+#contents #product-select .p-content>div:last-child{
+  margin-right: 0;
+} */
+
+/* 플렉스 레이아웃 적용시 */
+#contents #product-select .p-content{
+  width: 100%; height: 483px; text-align: center;
+  display: flex; justify-content: space-between;
+}
+#contents #product-select .p-content>div{
+  width: 270px; height: 100%; background-color: #f2f2f2;
+}
+#contents #product-select .box>div{
+  width: 100%; height: 273px; position: relative;
+}
+#contents #product-select .box>div img{
+  position: absolute; left: 50%; top: 50%;
+  
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+#contents #product-select .box h3{
+  width: 100%; height: 21px; 
+  font:700 1.5rem/21px 'Nanum Gothic', sans-serif;
+}
+#contents #product-select .box p{
+  width: 100%; height: 21px; margin-bottom: 84px;
+}
+#contents #product-select .box .btn{margin: auto;}
+
+
+/* ************* Event Area Start ************ */
+#event{
+  height: 546px; margin-bottom: 84px;
+  background: url(../images/eventimg.png) no-repeat top center;
+}
+#event .container{padding: 168px 0 0 70px;}
+#event .container h2{
+  width: 400px; height: 42px;
+  font:700 4.4rem/42px 'Nanum Gothic', sans-serif;
+  margin-bottom: 42px;
+}
+#event .container p{width: 100%; height: 42px; margin-bottom: 42px;}
+
+
+/* ************* Show Area Start ************ */
+#show{ height: 630px; margin-bottom: 84px; }
+#show .container{
+  background: url(../images/showimg.png) no-repeat top center;
+}
+
+
+/* ************* Product-infor Area Start ************ */
+#product-infor{height: auto;}
+#product-infor .box{width: 100%; height: 525px;}
+
+#product-infor .box>img{width: 50%; height: 100%; float: left;}
+#product-infor .box:nth-child(even)>img{float: right;}
+
+#product-infor .box>div{
+  width: 50%; height: 100%; float: left; padding: 147px 0 0 70px;
+}
+
+#product-infor .text-box h2, #product-infor .text-box h3{
+  width: 100%; font: 700 5rem 'Nanum Gothic', sans-serif;
+}
+#product-infor .text-box h2{
+  height: 42px; line-height: 42px; margin-bottom: 42px;
+}
+#product-infor .text-box h3{
+  height: 21px; line-height: 21px; font-size: 1.6rem; margin-bottom: 21px;
+}
+#product-infor .text-box p{
+  height: 42px; margin-bottom: 42px;
+}
+
+
+/* ************* Magazine Area Start ************ */
+
+#magazine{height: 525px; text-align: center;}
+#magazine .container{
+  padding-top: 105px; color: #222;
+  background: url(../images/magazineimg.png) no-repeat top center;
+}
+#magazine .container h2{
+  width: 100%; height: 42px; 
+  font: 700 5rem/42px 'Nanum Gothic', sans-serif;
+  margin-bottom: 42px;
+}
+#magazine .container p{
+  width: 100%; height: 21px; margin-bottom: 189px;
+}
+#magazine .container .btn{margin: auto;}
+
+
+/* ****************** Footer Area Start **************** */
+#footer{border-top: 1px solid #ccc;}
+#footer>div{width: 100%;}
+#footer>div a:hover{ color: #c30; }
+
+/* ****** f-top Area Start ******  */
+#footer #f-top{height: 399px; background-color: #f7f7f7;}
+#footer #f-top .container{
+  padding: 63px 0 21px; position: relative;
+}
+#footer #f-top h3{
+  width: 100%; height: 21px;
+  font: 700 1.4rem/21px 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+}
+
+
+/* 사이트맵 */
+#footer #f-top .sitemap{
+  width: 570px; height: 210px; float: left; padding: 0 30px 0 70px;
+}
+#footer #f-top .sitemap ul{
+  width: 100%; height: 100%;
+}
+#footer #f-top .sitemap ul li{
+  width: 50%; height: 21px; margin-bottom: 9px; float: left;
+  font-size: 1.2rem;
+}
+
+
+/* 고객문의 */
+#footer #f-top .customer{width: 270px; height: 210px; float: left; margin: 0 30px;}
+#footer #f-top .customer ul{width: 100%; height: 100%;}
+#footer #f-top .customer ul li{
+  width: 100%; height: 21px; margin-bottom: 9px; font-size: 1.2rem;
+}
+#footer #f-top .customer ul li i{margin-right: 5px;}
+
+
+/* SNS */
+#footer #f-top .sns{
+  width: 270px; height: 210px; float: left; margin-bottom: 42px;
+}
+
+#footer #f-top .sns .icon-group{font-size: 3rem; margin-bottom: 21px;}
+#footer #f-top .sns .icon-group a{margin-right: 10px;}
+#footer #f-top .sns .icon-group a:hover{ color: #fc0; }
+
+#footer #f-top .sns .mark img{margin-right: 15px;}
+#footer #f-top .sns .mark a:nth-child(2) img{
+  position: relative; top: -4px;
+}
+
+
+/* 위로가기 버튼 */
+#footer #f-top #top{
+  width: 60px; height: 21px; text-align: center; line-height: 21px;
+  position: absolute; top: 30px; right: 50px; 
+}
+#footer #f-top #top:hover{ color: #c30; }
+
+
+/* 카피라이트 */
+#footer #f-top .copyright{
+  clear: both; width: 100%; height: 63px; line-height: 63px;
+  text-indent: 70px;
+}
+
+
+
+/* ****** f-bottom Area Start ******  */
+#footer #f-bottom{
+  height: 189px; background-color: #363636; padding: 21px 0;
+}
+
+/* f-menu Start */
+#footer #f-bottom .f-menu{
+  width: 360px; height: 42px; margin: 0 auto 21px;
+}
+#footer #f-bottom .f-menu li{
+  float: left; padding: 0 15px; height: 42px; line-height: 42px;
+}
+#footer #f-bottom .f-menu li a{ color: #fff; font-size: 1.2rem; }
+#footer #f-bottom .f-menu li a:hover{ color: #fc0; }
+
+
+/* address Start */
+#footer #f-bottom address{font-style: normal; font-size: 1.2rem; color: #fff;}
+
+
+
+/* **************** 팝업 컨텐츠 영역시작 **************** */
+
+/* 팝업 버튼 시작 */
+#open-btn{
+  display: block;
+  width: 100px; height: 50px; background-color: #1e6198;
+  font:700 1.3rem 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: #fff;
+  padding-top: 8px;
+  letter-spacing: 1px;
+  border-radius: 6px 6px 0 0;
+
+  position: fixed; right: -40px; top: 50%;
+
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+#open-btn:hover{ right: -30px; }
+
+
+/* 팝업 컨텐츠 시작 */
+#popup{
+  width: 100%; height: 100%;
+  position: fixed; left: 0; top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+#popup .popup-content{
+  width: 450px; height: 600px; background-color: #fff; padding: 20px;
+  position: absolute; left: 50%; top: 50%;
+  
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+#popup .popup-content #close-btn{
+  display: block; width: 25px; height: 25px; font-size: 2rem;
+  position: absolute; top: 30px; right: 30px;
+}
+
+#popup .popup-content h2{
+  width: 129px; height: 20px; 
+  background-image: url(../images/light-logo.png);
+  margin-top: 21px; margin-bottom: 42px;
+}
+#popup .popup-content p{
+  width: 100%; height: 42px; text-align: center; font-size: 1.2rem;
+  color: #0f3e80; margin-bottom: 21px;
+}
+#popup .popup-content p strong{display: block; font-size: 1.4rem;}
+#popup .popup-content ul{ width: 90%; height: auto; margin: auto; }
+#popup .popup-content ul li{
+  width: 100%; height: 105px; 
+  padding: 20px 20px 20px 100px; 
+  border: 1px solid #ccc;
+  border-radius: 10px; margin-bottom: 21px;
+  position: relative;
+}
+#popup .popup-content ul li h3{margin-bottom: 7px;}
+#popup .popup-content ul li p{text-align: left;}
+#popup .popup-content ul li .img-box{
+  width: 40px; height: 40px;
+  position: absolute; left: 20px; top: 20px;
+}

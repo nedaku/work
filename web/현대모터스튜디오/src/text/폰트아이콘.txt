@@ -1,0 +1,62 @@
+
+[ 폰트어썸 아이콘 ]
+
+1. 달력
+<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+
+2. 지도
+<i class="fa fa-map-o" aria-hidden="true"></i>
+
+3. 유저
+<i class="fa fa-user-o" aria-hidden="true"></i>
+
+4. 이벤트
+<i class="fa fa-magic" aria-hidden="true"></i>
+
+====================================
+
+5. 화살표블릿
+<i class="fa fa-angle-left" aria-hidden="true"></i>
+<i class="fa fa-angle-right" aria-hidden="true"></i>
+
+====================================
+
+6. SNS 소셜아이콘
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<i class="fa fa-meanpath" aria-hidden="true"></i>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+
+
+====================================
+
+[ 네비게이션 배경 만들기 ]
+
+1. 전체 사이즈 : 10px(W) * 80px(H)
+2. 흰색 배경 사이즈 : 10px(W) * 70px(H)
+    - 배경 : 흰색
+3. 그림자 효과 적용 : 
+    - Opacity   :  12
+    - Angle      :  90
+    - Distence :   5
+    - Spread    :   0
+    - Size         :   5
+4. 이미지 컷  :   1px(W) * 80px(H)
+5. 저장          :    navi_bg.png
+
+==================================
+
+[ 목업 사이트 ]
+https://moqups.com/
+
+==================================
+
+대표자 : 이원희  
+사업자등록번호 : 293-85-00481
+통신판매신고번호 : 2016-고양일산서-0802
+현대 모터스튜디오 고양 고객센터 : 1899-6611
+경기도 고양시 일산 서구 킨텍스로 217-6 
+현대자동차(주) 현대 모터스튜디오 고양
+
+
+
+

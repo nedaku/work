@@ -1,0 +1,461 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ******************* 레이아웃 구성시작 **************** */
+body{
+  color: #2d2d2d;
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+
+#wrap>div{height: auto;}
+div#header{ width: 100%; height: 105px; }
+#mainview .slider-wrap{ height: 504px; }
+#mainview .news{ height: 42px; }
+#mainview .reserved{ height: 84px; }
+#contents>div:nth-child(odd){background-color: #e2e2e2;}
+#contents .event{ height: 360px; padding: 21px 0; }
+#contents .show{ height: 444px; padding-top: 84px; }
+#contents .service{ height: 525px; padding-top: 84px; }
+#contents .family{ height: 378px; padding: 63px 0; }
+#footer .f-top{ height: 189px; background-color: #333; }
+#footer .f-bottom{ height: 63px; background-color: #000; }
+
+.container{ width: 1170px; height: 100%; margin: auto; }
+
+ 
+/* ******************* 공통영역 선언시작 **************** */
+
+/* Slider Style Settings */
+.slider-wrap{ position: relative; }
+
+/* Pager */
+.pager{
+  width: 90px;
+  height: 10px;
+  position: absolute; left: 50%; bottom: 20px;
+  margin-left: -45px;
+}
+.pager li{
+  width: 10px;
+  height: 10px;
+  float: left;
+  margin-right: 10px;
+}
+.pager li:last-child{
+  margin-right: 0;
+}
+.pager li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.pager li a:hover{ background-color: #000; }
+
+/* 활성화 클래스 */
+.pager-act{background-color: #000 !important;}
+
+/* Sliders */
+.sliders, .sliders>div{ 
+  width: 100%; height: 100%;
+}
+
+/* Controls */
+.controls .next,
+.controls .prev{
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 3.6rem;
+  position: absolute; top: 50%; margin-top: -20px;
+}
+.controls .next{right: -50px;}
+.controls .prev{left: -50px;}
+
+
+/* Button Style Settings */
+.btn{
+  display: inline-block;
+  width: 170px;
+  height: 42px;
+  font: 700 1.4rem/42px "Nanum Gothic", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+.btn i{ margin-left: 20px; }
+
+
+.btn1{
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+.btn1:hover{
+  color: #333;
+  background-color: #32c3fe;
+}
+.btn2{
+  color: #333;
+  border: 1px solid #333;
+  background-color: transparent;
+}
+.btn2:hover{
+  background-color: #92e036;
+}
+
+
+/* ******************* 개별영역 선언시작 **************** */
+
+/* ************** header Area Start ************ */
+#header{
+  background-color: #fff;
+  box-shadow: 0 1px 12px #999;
+  position: absolute; left: 0; top: 0;
+  z-index: 9999;
+}
+
+/* Logo */
+#header h1{ 
+  width: 166px; 
+  height: 105px; 
+  float: left; 
+  margin-right: 100px;
+}
+#header h1 a{ 
+  background-image: url(../images/logo.png); 
+  background-position: 0 50%;
+}
+
+
+/* Gnb */
+#header .gnb{
+  width: 530px;
+  height: 105px;
+  float: left;
+}
+#header .gnb li{
+  height: 105px;
+  float: left;
+}
+#header .gnb li a{
+  display: block;
+  height: 100%;
+  padding: 0 20px;
+  font: bold 1.6rem/105px "Nanum Gothic", sans-serif;
+  position: relative;
+}
+#header .gnb li a::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute; left: 0; bottom: 0;  
+}
+#header .gnb li:nth-child(1) a:hover::after{background-color: #fc0;}
+#header .gnb li:nth-child(2) a:hover::after,
+#header .gnb li:nth-child(3) a:hover::after{background-color: #52d15a;}
+#header .gnb li:nth-child(4) a:hover::after,
+#header .gnb li:nth-child(5) a:hover::after{background-color: #47b4ea;}
+
+
+/* Login-box */
+.login-box{
+  width: 270px;
+  height: 105px;
+  float: right;
+  font: bold 1.4rem/105px "Nanum Gothic", sans-serif;
+  color: #999;
+}
+.login-box a{ margin: 0 5px; color: #999; }
+.login-box a:hover{ color: #333; }
+
+
+/* ************** mainview Area Start ************ */
+
+/* ******* slider-wrap Area Start ******* */
+#mainview .slider-wrap{ height: 504px; }
+
+
+/* sliders */
+#mainview .sliders .slider-item{
+  background: url(../images/mainview-bg.png) no-repeat 0 0;
+  background-size: cover;
+  padding: 63px 0 0 70px;
+}
+#mainview .sliders .caption{
+  width: 300px;
+  height: 189px;
+  color: #fff;
+}
+#mainview .sliders .caption h2{
+  height: 42px;
+  font: bold 3rem/42px "Nanum Gothic", sans-serif;
+  margin-bottom: 21px;
+}
+#mainview .sliders .caption p{
+  font: bold 1.4rem/21px "맑은 고딕", sans-serif;
+  margin-bottom: 42px;
+}
+
+
+/* ******* news Area Start ******* */
+#mainview .news h3, #mainview .news ul{
+  height: 42px;
+  float: left;
+}
+#mainview .news h3{
+  width: 100px;
+  font: 800 1.4rem/42px "Nanum Gothic", sans-serif;
+}
+#mainview .news ul{width: 500px;}
+#mainview .news ul li{
+  height: 100%;
+  font: bold 1.2rem/42px "맑은 고딕", sans-serif;  
+}
+#mainview .news ul li a{color: #888;}
+#mainview .news ul li a strong{
+  color: #333;
+  margin-left: 10px;
+}
+
+
+/* ******* reserved Area Start ******* */
+#mainview .reserved ul{
+  height: 84px;
+  display: flex;
+}
+#mainview .reserved ul li{
+  flex: 1;
+  border-right: 1px solid rgb(220, 220, 220);
+}
+#mainview .reserved ul li:last-child{
+  border-right: 0;
+}
+#mainview .reserved ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  font: 700 1.6rem/84px "Nanum Gothic", sans-serif;
+  text-indent: 50px;
+  position: relative;
+}
+#mainview .reserved ul li a:hover{background-color: #ffd97e;}
+#mainview .reserved ul li a i{
+  font-size: 3rem;
+  position: absolute; right: 40px; top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/* ************** contents Area Start ************ */
+
+/* *********** event Area Start ********* */
+#contents .event .sliders{ display: flex; }
+#contents .event .sliders>div{ 
+  flex: 1; 
+  background-color: #fff;
+}
+#contents .event .img-box{
+  height: 273px;
+  position: relative;
+}
+#contents .event .img-box .caption{
+  width: 240px;
+  height: 63px;
+  color: #fff;
+  font: bold 2.4rem/1.3 "Nanum Gothic", sans-serif;
+  position: absolute; left: 30px; top: 42px;
+}
+#contents .event .img-box .caption span{
+  font-size: 1.4rem;
+}
+#contents .event h3{
+  height: 42px;
+  font: bold 1.4rem/35px "Nanum Gothic", sans-serif;
+  text-indent: 10px;
+}
+
+
+/* *********** show Area Start ********* */
+#contents .show .slider-item{
+  display: flex;
+}
+#contents .show .slider-item .text-box{
+  width: 470px;
+  padding-top: 63px;
+}
+#contents .show .slider-item .text-box h2,
+#contents .show .slider-item .text-box p{
+  height: 63px;
+  margin-bottom: 21px;
+}
+#contents .show .slider-item .text-box h2{
+  font: bold 2.5rem/30px "nanum Gothic", sans-serif;
+}
+#contents .show .slider-item .text-box p{
+  font-size: 1.4rem;
+}
+
+
+
+/* *********** service Area Start ********* */
+#contents .service{ padding-top: 84px; }
+#contents .service .container{ background-color: #fff; }
+#contents .service h2{ 
+  height: 126px;
+  padding: 42px 42px 42px 35px;
+  font: bold 2.5rem/42px "nanum Gothic", sans-serif;
+}
+#contents .service .items{
+  display: flex;
+  height: 315px;
+}
+#contents .service .items>div{
+  flex: 1;
+  height: 315px;
+  position: relative;
+  overflow: hidden;
+}
+#contents .service img{
+  height: 100%;
+}
+#contents .service .caption{
+  width: 100%;
+  height: 630px;
+  position: absolute; left: 0; top: 0;
+}
+#contents .service .caption>div{
+  width: 100%;
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(255,255,255, 0.7);
+}
+#contents .service .caption h3{
+  font: bold 1.8rem "Nanum Gothic", sans-serif;
+  margin-bottom: 21px;
+}
+#contents .service .caption p{
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+#contents .service .caption>div:last-child{
+  background-color: rgba(4, 178, 111, 0.5);
+}
+
+/* Roll Over Settings */
+#contents .service .item .caption{
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+#contents .service .item:hover .caption{
+  top: -315px;
+}
+
+
+/* *********** family Area Start ********* */
+#contents .family .sliders{ 
+  display: flex; 
+  justify-content: space-between;
+}
+#contents .family .sliders>div{
+  width: 370px;
+  height: 252px;
+}
+#contents .family .sliders h3{
+  height: 42px;
+  font: bold 1.4rem/42px "Nanum Gothic", sans-serif;
+  text-indent: 10px;
+}
+
+
+/* ************** footer Area Start ************ */
+
+/* *********** f-top Area Start ********* */
+
+#footer .f-top .container{ position: relative; padding-top: 42px; }
+
+/* f-menu */
+#footer .f-menu{ height: 21px; margin-bottom: 42px; }
+#footer .f-menu li{height: 21px; float: left;}
+#footer .f-menu li a{
+  display: block;
+  height: 100%;
+  padding: 0 15px;
+  font: bold 1.4rem/21px "맑은 고딕", sans-serif;
+  color: #fff;
+  position: relative;
+}
+#footer .f-menu li:first-child a{padding-left: 0;}
+#footer .f-menu li a::after{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: #fff;
+  position: absolute; right: 0; top: 50%;
+  margin-top: -7px;
+}
+#footer .f-menu li:last-child a::after{display: none;}
+#footer .f-menu li a:hover{color: #fc0;}
+
+
+/* sns-group */
+#footer .sns-group{
+  width: 170px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 2.4rem;
+  position: absolute; right: 0; bottom: 42px;
+}
+#footer .sns-group a{
+  color: #fff;
+  margin-right: 5px;
+}
+#footer .sns-group a:hover{ color: #fc0; }
+
+
+/* address */
+#footer address{
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-style: normal;
+}
+#footer address span{margin-right: 15px;}
+
+
+/* *********** f-bottom Area Start ********* */
+#footer .f-bottom .container{display: flex;}
+#footer .f-bottom .copylogo, #footer .f-bottom p{
+  flex: 1; 
+  height: 100%; 
+}
+#footer .f-bottom .copylogo{
+  padding-top: 21px;
+}
+#footer .f-bottom p{
+  text-align: right; 
+  font-size: 1.4rem;
+  font-family: arial, sans-serif;
+  line-height: 63px;
+  color: #fff;
+}
+

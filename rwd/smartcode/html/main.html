@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap5 Project</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<!-- 수정 -->
+<body class="preload" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="81"> 
+
+  <!-- Header Area Start -->
+  <div  class="navbar navbar-expand-lg navbar-light fixed-top" id="header">
+    <div class="container-lg">
+
+      <div class="nav-header">
+        <!-- Logo -->
+        <h1><a href="#intro" class="ir">Navbar</a></h1>
+        <!-- Mobile Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gnb" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="mobile_btn">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Gnb -->
+      <div class="collapse navbar-collapse" id="gnb">
+
+        <!-- 자동 여백을 통해 플렉스 항목을 제어하는 세 가지 예입니다! 
+          1. 기본값(자동 여백 없음) 
+          2. .me-auto(왼쪽 정렬) :  항목을 오른쪽으로 밀기
+          3. .ms-auto(오른쪽 정렬) :  항목을 왼쪽으로 밀기
+         -->
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#intro">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#newletter">Newsletter</a>
+          </li>
+        </ul>        
+      </div>
+
+    </div>
+  </div>
+    
+  <!-- Intro Area Start -->
+  <div id="intro">
+
+    <!-- Desktop & Wide Device -->
+    <div class="container-fluid">        
+
+      <!-- Slider Start -->
+      <!-- Carousel Option :
+        1. carousel-fade : 'fadeIn' 효과 적용
+        2. data-bs-ride="carousel" : Auto Play(오토플레이) 적용속성
+        3. data-bs-touch="true" : 
+          캐러셀이 터치스크린 기기에서 스와이프 상호작용을 지원 유무 설정 속성 
+      -->
+
+      <div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Pager Start -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Slider Container -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">              
+            <div class="carousel-caption d-none d-md-block" >
+              <div class="container">
+                <h2>Business</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ullam accusantium perferendis architecto optio repudiandae magni Magni.</p>
+                <a href="#" class="c-btn c-btn1">Contact Us</a>
+              </div> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <h2>Second slide label</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ullam accusantium perferendis architecto optio repudiandae magni Magni.</p>
+                <a href="#" class="c-btn c-btn1">Contact Us</a>
+              </div> 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="container">
+                <h2>Third slide label</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ullam accusantium perferendis architecto optio repudiandae magni Magni.</p>
+                <a href="#" class="c-btn c-btn1">Contact Us</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls : Prev & Next Button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+      <!-- Slider End -->
+
+    </div>
+
+    <!-- Mobile Device -->
+    <div class="mobile-container">              
+      <div class="caption">
+        <h2>Business</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ullam accusantium perferendis architecto optio repudiandae magni Magni.</p>
+        <a href="#" class="c-btn c-btn1">Contact Us</a> 
+      </div>
+    </div>
+
+  </div> <!-- Intro Area End -->
+  
+
+  <!-- About Area Start -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+
+        <!-- left-box -->
+        <div class="col-md-12 col-lg-6 align-self-center left-box">
+          <h2>About Us</h2>
+          <h3>Read Our Company</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consectetur corporis explicabo doloremque, illo officia optio sit sapiente deserunt animi voluptates atque.</p>
+          <a href="#" class="c-btn c-btn1">LEARN MORE</a> 
+        </div>
+
+        <!-- right-box -->
+        <div class="col-md-12 col-lg-6 right-box">
+          <div class="img-box">
+            <img src="../images/xl/about.png" alt="CEO Photo">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> <!-- About Area End -->
+  
+
+  <!-- Service Area Start -->
+  <div id="service">      
+    <div class="container">
+
+      <!-- Title -->
+      <div class="row title">
+        <div class="col-sm-12">
+          <h2>Service</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident delectus pariatur, dolor optio quo minima?</p>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="row gy-sm-5 gy-md-5 content">
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
+            <i class="bi bi-activity"></i>
+            <h3>Business Stratagy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aspernatur voluptates repellat nihil voluptatibus quos?</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
+            <i class="bi bi-display"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aspernatur voluptates repellat nihil voluptatibus quos?</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="card">
+            <i class="bi bi-people-fill"></i>
+            <h3>Marketing & Reporting</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aspernatur voluptates repellat nihil voluptatibus quos?</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- Service Area End -->
+  
+
+  <!-- Projects Area Start -->
+  <div id="projects">      
+    <div class="container">
+
+      <!-- Title -->
+      <div class="row title">
+        <div class="col-xs-12">
+          <h2>Recent Projects</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident delectus pariatur, dolor optio quo minima?</p>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="row gy-sm-5 gy-md-5 g-lg-4 content">
+        <div class="col-md-12 col-lg-4">
+          <img src="../images/xl/photo1.png" alt="Project Photo1">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <img src="../images/xl/photo2.png" alt="Project Photo2">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <img src="../images/xl/photo3.png" alt="Project Photo3">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <img src="../images/xl/photo4.png" alt="Project Photo4">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <img src="../images/xl/photo5.png" alt="Project Photo5">
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <img src="../images/xl/photo6.png" alt="Project Photo6">
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- Projects Area End -->
+  
+
+  <!-- Team Area Start -->
+  <div id="team">      
+    <div class="container">
+
+      <!-- Title -->
+      <div class="row title">
+        <div class="col-sm-12">
+          <h2>Meet the Team</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto beatae quod, rerum tenetur laborum libero?</p>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="row gy-sm-5 gy-md-5 content">
+        <div class="col-md-12 col-lg-4">
+          <div class="team-box">
+            <div class="img-box">
+              <img src="../images/xl/team1.png" alt="Team Photo1">
+            </div>
+            <h3>Jonathon Doe <span>Sr. Web Developer</span></h3>
+            <ul class="sns">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="team-box">
+            <div class="img-box">
+              <img src="../images/xl/team2.png" alt="Team Photo2">
+            </div>
+            <h3>Lara Sin <span>Art Director</span></h3>
+            <ul class="sns">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-4">
+          <div class="team-box">
+            <div class="img-box">
+              <img src="../images/xl/team3.png" alt="Team Photo3">
+            </div>
+            <h3>Abbree Dern <span>Sr. Graphic Developer</span></h3>
+            <ul class="sns">
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> <!-- Team Area End -->
+
+
+  <!-- Newsletter Area Start -->
+  <div id="newsletter">
+    <div class="container">
+      <h3>Subscribe Now and Quench Your Wanderlust!</h3>
+      <a href="#" class="c-btn c-btn2">Join Now</a>
+    </div>
+  </div> <!-- Newsletter Area End -->
+  
+
+  <!-- Footer Area Start -->
+  <div id="footer">
+    
+    <!-- f-top -->
+    <div class="f-top">
+      <div class="container">
+        <div class="row gy-sm-5 gy-md-5">
+
+          <!-- Address -->
+          <div class="col-md-12 col-lg-4">
+            <img src="../images/xl/footer-logo.png" alt="Footer Logo">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolores quae voluptatum doloremque inventore asperiores.</p>
+
+            <ul>
+              <li><i class="bi bi-envelope"></i> info@yourdomain.com</li>
+              <li><i class="bi bi-telephone"></i> 123 456 7890</li>
+              <li><i class="bi bi-geo-alt"></i> Your Address, NYC</li>
+            </ul>
+          </div>
+
+          <!-- Post -->
+          <div class="col-md-12 col-lg-4">
+            <h3>Our Recent Post</h3>
+            <ul>
+              <li>
+                Lorem, ipsum <span>dolor September 28, 2023</span>
+              </li>
+              <li>
+                Lorem, ipsum <span>dolor September 28, 2023</span>
+              </li>
+              <li>
+                Lorem, ipsum <span>dolor September 28, 2023</span>
+              </li>
+              <li>
+                Lorem, ipsum <span>dolor September 28, 2023</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Subscribe -->
+          <div class="col-md-12 col-lg-4">
+
+            <h3>Subscribe to our Newsletter</h3>
+
+            <form action="">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="input_name" placeholder="Enter Your Name">
+                <label for="input_name">
+                  Enter Your Name 
+                </label>
+              </div>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="input_email" placeholder="Enter Your Email">
+                <label for="input_email">
+                  Enter Your Email
+                </label>
+              </div>
+              <p>
+                <input type="submit" value="Subscribe" id="input_submit">
+              </p>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- f-bottom -->
+    <div class="f-bottom">
+      <p>Copyright 2023 &copy; abc.com All Rights Reserved.</p>
+    </div>
+
+  </div> <!-- Footer Area End -->
+
+  <!-- Top Button -->
+  <a href="#" id="top_btn">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+
+  <!-- jQuery Insert -->
+  <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+  
+  <script src='../js/main.js'></script>
+  
+</body>
+</html>

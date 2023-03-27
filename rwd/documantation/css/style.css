@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+*{ box-sizing: border-box !important; }
+
+img{ max-width: 100%; height: auto; }
+a{ color: #000; text-decoration: none; }
+ul{ list-style: none; }
+
+/* Container Settings */
+.container-lg, .container-fluid{ padding: 72px 0; }
+#header, #header .container-lg{padding: 0;}
+
+
+/* Header Area Start : Pointer Color(#17a288) */
+
+/* Logo */
+#header .navbar-brand{margin: 0;}
+
+/* Gnb */
+#header #gnb .nav-link{ color: #17a288; }
+#header #gnb .nav-link:hover, #gnb .nav-link.active{
+  color: #2d2d2d !important; 
+  background-color: #17a288;
+  border-radius: 5px;
+}
+
+
+/* Intro Area Start */
+#intro .container-fluid{ padding-top: 72px; }
+#intro #slider .carousel-caption{
+  bottom: auto !important;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/* Contact Area Start */
+#contact{
+  background: url(../images/map.jpg) no-repeat top center / cover;
+}
+#contact .card, #contact .card .card-header{
+  border: 0;
+}
+
+
+/* Footer Area Start */
+#footer{ padding-bottom: 0; }
+#footer .f-bottom {background-color: #e2e2e2;}
+#footer .f-bottom .col-sm-12{ 
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+
+
+/* **************** Media Query Area Start *************** */
+
+/* Desktop(lg) Area Start */
+@media screen and (max-width: 1199px){
+  
+  /* Work Area Start */
+  #work .col-lg-6{ margin-bottom: 30px; }
+  #work .col-lg-6:nth-child(n+3){ margin-bottom: 0; }
+
+  /* Footer Area Start */
+  #footer .f-top{padding-bottom: 42px;}
+  #footer .f-top .row>div:nth-child(3){
+    padding-left: 0 !important;
+  }
+  #footer .f-top .row>div:nth-child(4){
+    padding-left: 3rem !important;
+  }
+  #footer .col-lg-6{ margin-bottom: 30px; }
+  #footer .col-lg-6:nth-child(n+3){ margin-bottom: 0; }
+
+}
+
+
+/* Tablet(md) Area Start */
+@media screen and (max-width: 991px){
+
+  /* Header Area Start */
+
+  /* Logo */
+  #header .nav-title{
+    width: 100%;
+    position: relative;
+  }
+  #header .nav-title #mobile_btn{   
+    border: 1px solid #ccc; 
+    background-color: #f2f2f2;
+    position: absolute; right: 0; top: 15px;
+  }
+  #header .nav-title #mobile_btn:hover{
+    border: 1px solid #333;
+    background-color: #e2e2e2;
+  }
+  #header .nav-title #mobile_btn:focus{    
+    box-shadow: none;
+  }
+
+  /* Gnb */
+  #header #gnb{ background-color: #e2e2e2; padding: 10px 0; }
+  #header #gnb li{margin-bottom: 10px;}
+  #header #gnb li:last-child{margin-bottom: 0;}
+  #header #gnb .nav-link{text-indent: 15px;}
+
+
+  /* About Area Start */
+  #about .row .col-lg-6{ margin-bottom: 42px; }
+  #about .row .col-lg-6:last-child{ margin-bottom: 0; }
+  
+  /* Work Area Start */
+  #work .row .col-lg-6{ margin-bottom: 21px; }
+  
+  /* Contact Area Start */
+  #contact .col-sm-8{ width: 90%; margin: auto; }
+
+  /* Footer Area Start */
+  #footer .col-lg-6,
+  #footer .f-top .row>div:nth-child(4){ 
+    padding: 0 !important; margin: 0 0 30px; 
+  }
+  #footer .f-top .row{
+    padding: 0 30px;
+  }
+  #footer .f-top .row>div:first-child img{
+    width: 350px !important;
+  }
+
+}
+
+
+/* Mobile(sm) Area Start */
+@media screen and (max-width: 575px){
+
+  /* Contact Area Start */
+  #contact .col-sm-8{ width: 96%; }
+
+  /* Footer Area Start */
+  #footer .f-top .row>div:first-child img{
+    width: 250px !important;
+  }
+
+}

@@ -1,0 +1,16 @@
+[ 섹션별 사이즈 ]
+1. navi : 80px
+2. mainview : 660px
+    * slider : 520px
+    * new-latest : 40px
+    * reserve-group : 100px
+3. event-banner : 338px
+4. show-banner : 430px
+5. service-center : 510px
+6. family-group  : 358px
+7. footer : 230px
+   * f-top : 170px
+   * f-bottom : 60px
+
+
+400 * 260

@@ -1,0 +1,430 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* 전체 레이아웃 설정 */
+  #header{height: 64px;}
+  #mainview{height: 651px;}
+  #product-select{height: 777px;}
+  #event{height:546px ;}
+  #show{height: 630px ;}
+  #product-infor{height: 2625px;}
+  #magazine{height: 525px;}
+  #f-top{height: 399px;}
+  #f-bottom{height: 189px;} 
+
+  /* 전체 영역 설정 */
+
+  /* button 영역 설정 */
+  .button{
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font:bold 1.3rem/50px '맑은 고딕', sans-serif;
+    text-align: center;
+
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    -o-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+  }
+  .button:hover{
+    background-color: #fff;
+    color: #000;
+  }
+
+  .button2{
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    color: #000;
+    font:bold 1.3rem/50px '맑은 고딕', sans-serif;
+    text-align: center;
+
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    -o-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+  }
+  .button2:hover{
+    background-color: #000;
+    color: #fff;
+  }
+  
+  
+  /* header Area Stert */
+  #header{
+    border-bottom: 1px solid #ccc;}
+    #header .container{
+      width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+   
+    #header .container .gnb a{
+      font:bold 1.3rem/64px '맑은 고딕', sans-serif;
+      text-align: center;
+      margin: 0 5px;
+    }
+    #header .container .logo{
+      margin: 20px;
+      width: 128px;
+      height: 28px;
+      position: relative; left: 0;
+      background: url(../images/light-logo.png) no-repeat 0 0;      
+    }
+    
+    #header .container .qmenu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #header .container .qmenu a{
+      font:bold 1.3rem/64px '맑은 고딕', sans-serif;
+      margin: 0 10px;
+      
+      
+    }
+    #header .container .qmenu .icon-group i:hover,
+    #header .container .qmenu a:hover{
+      cursor: pointer;
+      color:blue;
+    }
+    
+    #header .container .qmenu .icon-group i{
+      font-size: 20px;
+      margin: 0 5px;
+    }
+    /* mainview Area Stert */
+    #mainview{
+      width: 1440px;
+      background: url(../images/mainview-bg.jpg) no-repeat 0 0;
+      margin: 60px auto 0 auto;
+
+    }
+    #mainview .container{
+      width: 1200px;
+    margin: auto;
+    position: relative; top: 150px;
+    }
+    #mainview .container .caption{
+      position: relative; 
+    }
+    
+    #mainview .container .caption h2{
+    font:600 6rem/64px '맑은 고딕', sans-serif;
+    color: #fff;
+    width: 390px;
+    margin: 20px 0;
+    }
+    #mainview .container .caption>a{
+      margin-top: 50px;
+    }
+
+
+
+
+/* contents Area Stert */
+
+#product-select{
+margin: auto;
+}
+#product-select .p-title{
+width: 1170px;
+margin: auto;
+text-align: center;
+height: 252px;
+}
+#product-select .p-title h3{
+  padding-top: 70px;
+  font:bold 3.6rem 'Nanum Gothic', sans-serif;
+  margin-bottom: 30px;
+}
+#product-select .p-title p{
+  font:bold 1.4rem 'Nanum Gothic', sans-serif;
+  
+}
+#product-select .container .p-content{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#product-select .container .p-content>div{
+  width: 270px;
+  height: 483px;
+  margin: 0 15px;
+  background-color: #f2f2f2;
+}
+#product-select .container .p-content>div>img{
+  width: 270px;
+  height: 252px;
+}
+#product-select .container .p-content>div>h3{
+  font:bold 1.5rem 'Nanum Gothic', sans-serif;
+  font:bold 1.5rem 'Nanum Gothic', sans-serif;
+  text-align: center;
+  margin: 10px;
+  
+}
+#product-select .container .p-content>div>p{
+  font:400 1.3rem 'Nanum Gothic', sans-serif;
+  text-align: center;
+  margin: 10px 10px 84px 10px;
+  
+}
+
+#product-select .container .p-content>div>a{
+  margin-left: 60px;
+}
+
+/* event Area Start */
+#event{
+  margin: 84px auto;
+  width: 1170px;
+  background: #f2f2f2 url(../images/eventimg.png)no-repeat 500px 0;
+  position: relative;
+  
+}
+#event .container{
+  height: 210px;
+  position: relative;
+  top:168px; left: 70px;
+  width: 400px;
+}
+#event .container h3{
+font:bold 4.4rem 'Nanum Gothic', sans-serif;
+margin-bottom: 42px;
+}
+#event .container p{
+  font:400 1.4rem 'Nanum Gothic', sans-serif;
+  margin-bottom: 42px;
+  
+}
+#event .container p:last-child{
+  position: relative;top: -360px;left: 970px;
+  font:bold 1.5rem 'Nanum Gothic', sans-serif;
+  
+}
+/* show Area Start */
+#show .container{
+  margin: auto;
+  width: 1170px;
+  height: 630px;
+  background: url(../images/live-event.jpg) no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+#product-infor{
+  margin: 60px auto 0 auto;
+  width: 1170px;
+}
+
+#product-infor .container>div{width: 100%;
+  height: 525px;
+  display: flex;
+}
+#product-infor .container div>div{
+  width: 50%;
+  height: 100%;
+  flex:1;
+}
+#product-infor .container>div>.img-box img{
+  width: 585px;
+  height: 525px;
+}
+
+#product-infor .container>div>.text-box p{
+  display: block;
+  position: relative;top:150px;
+  left: 100px;
+}
+#product-infor .container>div>.text-box p:first-child{
+  font:bold 5rem 'Nanum Gothic', sans-serif;
+  margin: 20px 0;
+  
+}
+#product-infor .container>div>.text-box p:nth-child(2){
+  font:bold 2rem 'Nanum Gothic', sans-serif;
+  margin: 20px 0;
+}
+#product-infor .container>div>.text-box p:nth-child(3){
+  width: 320px;
+  font:400 1.3rem 'Nanum Gothic', sans-serif;
+  margin: 10px 0;
+}
+#product-infor .container>div>.text-box p:nth-child(4){
+  margin-top: 40px;
+}
+/* magazine Area Start */
+#magazine{
+  margin: auto;
+  width: 1170px;
+  background: url(../images/magazineimg.png) 0 0;
+  background-size: 100% 100%;
+  position: relative;
+}
+#magazine .container{
+  
+  position: relative; top: 90px;
+  left: 0;
+}
+#magazine .container h3{
+  font:bold 5rem 'Nanum Gothic', sans-serif;
+  text-align: center;
+  margin-bottom: 42px;
+}
+#magazine .container p{
+  font:bold 1.4rem 'Nanum Gothic', sans-serif;
+  text-align: center;
+  
+}
+#magazine .container p a{
+    margin-top: 150px;
+  }
+  /* footer Area Start */
+  
+  #footer #f-top{
+    background-color: #f2f2f2;
+    position: relative;
+    border-top: 1px solid #888;
+  }
+  #footer #f-top .container{
+    width: 1170px;
+    margin: auto;
+    position: relative;
+    padding: 70px;
+  }
+  #footer #f-top .container div{display: inline-block;}
+  #footer #f-top .container .footer-box1{
+    width: 200px;
+    height: 210px;
+  }
+  #footer #f-top .container .footer-box1 p{
+    font:600 1.3rem 'Nanum Gothic', sans-serif;
+    padding-bottom: 30px;
+  }
+  #footer #f-top .container .footer-box1 a{
+    margin:10px 0;
+    font:400 1.2rem 'Nanum Gothic', sans-serif;
+    display: block;
+    
+    
+  }
+  #footer #f-top .container .dd{
+    width: 200px;
+    height: 210px;
+    position: relative;top:0;
+    margin-left: 10px;
+  }
+  #footer #f-top .container .dd a{
+    display: block;
+    margin:10px 0;
+    font:400 1.2rem 'Nanum Gothic', sans-serif;
+  }
+  #footer #f-top .container .dd a:nth-of-type(1){
+    margin-top: 55px;
+  }
+  .footer-box2{
+    width: 200px;
+    height: 210px;
+    position: relative;top:-30px;
+    margin-left: 50px;
+  }
+  .footer-box2 a{
+    display: block;
+    margin:10px 0;
+    font:400 1.3rem 'Nanum Gothic', sans-serif;
+    
+  }
+  .footer-box2 a:hover{
+    color: #fc0;
+  }
+  
+  .footer-box2 a i{
+    padding-right: 10px;
+  }
+  .footer-box2 p{
+    font:600 1.3rem 'Nanum Gothic', sans-serif;
+    padding-bottom: 30px;
+    
+  }
+  .icon-group{
+    width: 200px;
+    height: 100px;
+    position: relative;top:-130px;
+    margin-left: 0px;
+    
+  }
+  .icon-group p{
+    
+    font:600 1.3rem 'Nanum Gothic', sans-serif;
+    padding-bottom: 30px;
+  }
+  .icon-group i{
+    font-size: 30px;
+    margin-right:10px ;
+  }
+  .img-group {
+    width: 200px;
+    height: 100px;
+    position: relative;top:-140px;
+    left: 640px;
+    margin-left: 30px;
+    display: inline-block;
+    
+  }
+  .img-group>div{
+    margin-right: 5px;
+  }
+  .img-group>div:nth-child(1){
+    width: 50px;
+    height:32px;
+    background: url(../images/f-mark1.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+  .img-group>div:nth-child(2){
+    width: 50px;
+    height:32px;
+    background: url(../images/f-mark2.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+  .img-group>div:nth-child(3){
+    width: 50px;
+    height:32px;
+    background: url(../images/f-mark3.png) no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+  #f-top>.container>p{
+    position: relative;top:-90px;
+    font:400 1rem 'Nanum Gothic', sans-serif;
+  }
+  #f-bottom{
+    background-color: #2d2d2d;
+  }
+  #f-bottom .container{
+    margin: auto;
+    width: 1170px;
+  }
+  #f-bottom .container .f-menu{
+    height: 60px;
+    font:600 1rem/60px 'Nanum Gothic', sans-serif;
+    text-align: center;
+  }
+  #f-bottom .container .f-menu a{
+    color: #fff;
+    margin-right: 20px;
+  }
+  address{
+    color: #fff;
+    text-align: start;
+    font:400 1.2rem/20px 'Nanum Gothic', sans-serif;
+  }
+  

@@ -1,0 +1,590 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+  font-family: "맑은 고딕", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+form, table, ul, ol, dl, p, address, blockquote {
+  font-size: 1.4rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+label, input {
+  vertical-align: middle;
+}
+
+input, textarea {
+  outline: none;
+}
+
+table, tr, th, td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+caption {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Help Class Settings */
+/* IR(Image Replace) */
+.ir {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: no-repeat 0 0;
+}
+
+/* 플롯해제 클래스 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 화면 감춤 클래스 */
+.screen-hidden {
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+  text-indent: -9999px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ********** Bootstrap5 Custom Style Setting **********  */
+.row {
+  margin: 0;
+}
+
+/* ***************** 레이아웃 구성 시작 *****************  */
+#intro {
+  height: 100vh;
+}
+
+#footer {
+  height: 63px;
+}
+
+.container, .container-lg, .container-fluid {
+  height: 100%;
+  padding: 0;
+}
+
+.container {
+  padding: 105px 0;
+}
+
+/* ***************** 공통영역 선언 시작 *****************  */
+body {
+  position: relative;
+}
+
+.title {
+  text-align: center;
+}
+.title h2 {
+  height: 63px;
+  margin-bottom: 84px;
+  font: 700 3.6rem/42px "Nanum Gothic";
+  position: relative;
+}
+.title h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #f05f40;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -25px;
+}
+
+.button {
+  display: inline-block;
+  width: 160px;
+  height: 42px;
+  border-radius: 21px;
+  font: 500 1.4rem/42px "Roboto", sans-serif;
+}
+
+.btn1 {
+  color: #fff;
+  background-color: rgb(231, 68, 87);
+}
+.btn1:hover {
+  color: #fff;
+  background-color: rgb(247, 85, 104);
+}
+
+.btn2 {
+  color: #2d2d2d;
+  background-color: #fff;
+}
+.btn2:hover {
+  color: #2d2d2d;
+  background-color: #f2f2f2;
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ***************** 개별영역 선언 시작 *****************  */
+/* ************** Header Area Start **************  */
+#header {
+  padding: 0;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+#header h1 {
+  width: 120px;
+  height: 50px;
+}
+#header h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font: bold 2rem/50px "Roboto";
+}
+#header #gnb li a.active {
+  color: #fff !important;
+}
+#header #gnb a {
+  padding: 0 15px;
+  color: #fff;
+  font: bold 1.6rem/50px "Nanum Gothic";
+}
+#header #gnb a:hover {
+  background-color: rgba(255, 171, 4, 0.5);
+}
+
+#header.fixed {
+  height: 50px !important;
+  background-color: rgb(255, 255, 255) !important;
+  border-bottom: 1px solid #ccc;
+}
+#header.fixed h1 a, #header.fixed #gnb a {
+  color: #2d2d2d !important;
+}
+#header.fixed #gnb a:hover {
+  color: #f05f40 !important;
+  background-color: transparent !important;
+}
+#header.fixed #gnb a.active {
+  color: #f05f40 !important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: #f05f40 !important;
+}
+
+/* ************** Intro Area Start **************  */
+#intro {
+  background: url(../images/lg/intro-bg.jpg) no-repeat top center/cover;
+}
+#intro .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#intro .container .intro-content {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+#intro .container .intro-content h2 {
+  height: 168px;
+  margin-bottom: 42px;
+  color: #fff;
+  font: 700 6rem/60px "Roboto";
+  position: relative;
+}
+#intro .container .intro-content h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f05f40;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -35px;
+}
+#intro .container .intro-content p {
+  width: 570px;
+  margin: 0 auto 84px;
+  color: #fff;
+}
+
+/* ************** About Area Start **************  */
+#about {
+  color: #fff;
+  background-color: #f05f40;
+  text-align: center;
+}
+#about h2 {
+  margin-bottom: 42px;
+}
+#about h2::after {
+  background-color: #fff;
+}
+#about p {
+  width: 630px;
+  margin: 0 auto 63px;
+}
+
+/* ************** Service Area Start **************  */
+#service .content {
+  text-align: center;
+}
+#service .content .icon, #service .content h3 {
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 21px;
+}
+#service .content .icon {
+  font-size: 4rem;
+  color: #f05f40;
+}
+#service .content h3 {
+  font: 400 2.4rem "Nanum Gothic";
+}
+
+/* ************** Portfolio Area Start **************  */
+#portfolio .title {
+  margin-bottom: 63px;
+}
+#portfolio .title h2 {
+  margin-bottom: 63px;
+}
+#portfolio .title .g-menu {
+  height: 42px;
+  text-align: center;
+}
+#portfolio .title .g-menu li {
+  height: 42px;
+  display: inline-block;
+  margin: 0 5px;
+}
+#portfolio .title .g-menu li a {
+  display: block;
+  padding: 0 20px;
+  height: 100%;
+  font: bold 1.6rem/42px "Nanum Gothic";
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  color: #2d2d2d;
+}
+#portfolio .title .g-menu li a:hover {
+  background-color: #e2e2e2;
+}
+#portfolio .title .g-menu li:first-child a {
+  padding: 0 30px;
+}
+#portfolio .content .col-sm-12 {
+  padding: 0;
+}
+#portfolio .content #gallery .grid-item {
+  width: 33.3333333333%;
+}
+#portfolio .content #gallery .grid-item a .caption {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(240, 95, 64, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+#portfolio .content #gallery .grid-item a .caption h3 {
+  font: 700 3rem "Nanum Gothic", sans-serif;
+}
+#portfolio .content #gallery .grid-item a:hover .caption {
+  opacity: 1;
+}
+
+/* ************** Team Area Start **************  */
+#team .content {
+  text-align: center;
+}
+#team .content .img-box {
+  width: 168px;
+  height: 168px;
+  margin: 0 auto 21px;
+  position: relative;
+}
+#team .content .img-box:hover::after {
+  content: "";
+  display: block;
+  width: 158px;
+  height: 158px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+#team .content .img-box:hover .sns {
+  opacity: 1;
+}
+#team .content .img-box img {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ccc;
+  border-radius: 50%;
+}
+#team .content .img-box .sns {
+  width: 100%;
+  height: 21px;
+  line-height: 21px;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 10;
+  opacity: 0;
+}
+#team .content .img-box .sns a {
+  color: #fff;
+}
+#team .content .img-box .sns a:hover {
+  color: #fc0;
+}
+#team .content h3 {
+  height: 42px;
+  margin-bottom: 21px;
+  font: 700 1.6rem "Nanum Gothic", sans-serif;
+}
+#team .content h3 span {
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+/* ************** Banner Area Start **************  */
+#banner .container-fluid {
+  padding: 105px 0;
+  color: #fff;
+  background-image: url(../images/lg/banner-bg.jpg);
+}
+#banner .container-fluid h2 {
+  margin-bottom: 42px;
+}
+#banner .container-lg {
+  padding: 105px 0;
+  display: none;
+}
+
+/* ************** Contact Area Start **************  */
+#contact .title {
+  text-align: center;
+  margin-bottom: 63px;
+}
+#contact .title h2 {
+  margin-bottom: 42px;
+}
+#contact .content {
+  text-align: center;
+}
+#contact .content .icon {
+  height: 42px;
+  line-height: 42px;
+  font-size: 3.6rem;
+  margin-bottom: 21px;
+}
+
+/* ************** Footer Area Start **************  */
+#footer {
+  background-color: #333;
+  color: #fff;
+}
+
+#footer .container {
+  padding: 0;
+}
+
+#footer .container p {
+  height: 63px;
+  line-height: 63px;
+  text-align: center;
+}
+
+/* ***************** 미디어쿼리 선언 시작 *****************  */
+@media screen and (max-width: 1199px) {
+  #header #gnb a {
+    font-size: 1.4rem;
+  }
+  #intro .container .intro-content h2 {
+    font-size: 5.2rem;
+  }
+  #service .content h3 {
+    font-size: 2.1rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  #header {
+    height: auto;
+    background: #fff;
+  }
+  #header .nav-header {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding: 0 15px;
+  }
+  #header .nav-header h1 a {
+    color: #2d2d2d;
+  }
+  #header .nav-header #mobile_btn {
+    border: 1px solid #888;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  #header .nav-header #mobile_btn:hover {
+    background-color: #f2f2f2;
+  }
+  #header .nav-header #mobile_btn:focus {
+    box-shadow: none;
+  }
+  #header #gnb ul {
+    padding: 25px 0;
+  }
+  #header #gnb ul a, #header #gnb li a.active {
+    color: #2d2d2d !important;
+  }
+  #header.fixed {
+    height: auto !important;
+  }
+  #intro .container .intro-content h2 {
+    font-size: 4.2em;
+    line-height: 50px;
+  }
+  #intro .container .intro-content h2 br {
+    display: none;
+  }
+  #intro .container .intro-content p {
+    width: 80%;
+    margin: 0 auto 63px;
+  }
+  #about p {
+    width: 100%;
+  }
+  #service .content .col-sm-12 {
+    margin-bottom: 42px;
+  }
+  #service .content h3 {
+    height: 21px;
+    margin-bottom: 15px;
+  }
+  #portfolio .content #gallery .grid-item {
+    width: 50%;
+  }
+  #team .content .col-md-12 {
+    margin-bottom: 63px;
+  }
+  #contact .content .col-md-12 {
+    margin-bottom: 63px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #portfolio .content #gallery .grid-item {
+    width: 100%;
+  }
+  #banner .container-fluid {
+    display: none;
+  }
+  #banner .container-lg {
+    display: block;
+    padding: 105px 0;
+    color: #fff;
+    background-image: url(../images/lg/banner-bg.jpg);
+  }
+  #banner .container-lg h2 {
+    margin-bottom: 42px;
+  }
+}

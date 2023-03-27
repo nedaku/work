@@ -1,0 +1,688 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 10px;
+  font-family: "맑은 고딕", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+form, table, ul, ol, dl, p, address, blockquote {
+  font-size: 1.4rem;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+label, input {
+  vertical-align: middle;
+}
+
+input, textarea {
+  outline: none;
+}
+
+table, tr, th, td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+caption {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Help Class Settings */
+/* IR(Image Replace) */
+.ir {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: no-repeat 0 0;
+}
+
+/* 플롯해제 클래스 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 화면 감춤 클래스 */
+.screen-hidden {
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  overflow: hidden;
+  text-indent: -9999px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ********** Bootstrap5 Custom Style Setting **********  */
+.row {
+  margin: 0;
+}
+
+.nav-link {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/* ***************** 레이아웃 구성 시작 *****************  */
+body {
+  padding-top: 80px;
+}
+
+#header {
+  padding: 0 !important;
+  background-color: #fff;
+}
+
+#intro, #footer {
+  height: auto;
+}
+
+.container, .container-fluid {
+  height: 100%;
+  padding: 0;
+}
+
+.container {
+  padding: 84px 0;
+}
+
+/* ***************** 공통영역 선언 시작 *****************  */
+h2 {
+  font: 800 8rem/63px "Poppins", sans-serif;
+}
+
+h3 {
+  font: 500 2.4rem/21px "Poppins", sans-serif;
+}
+
+p {
+  font: 300 1.6rem/1.5 "Poppins", sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 63px;
+}
+.title h2 {
+  margin-bottom: 42px;
+}
+
+.c-btn {
+  display: inline-block;
+  text-align: center;
+  font: 300 1.8rem/63px "Poppins", sans-serif;
+}
+
+.c-btn1 {
+  width: 224px;
+  height: 63px;
+  color: #fff;
+  background-color: #fa983a;
+  border-radius: 31px;
+}
+.c-btn1:hover {
+  color: #262626;
+  background-color: #fad390;
+}
+
+.c-btn2 {
+  width: 196px;
+  height: 50px;
+  line-height: 50px;
+  color: #262626;
+  background-color: #fff;
+}
+.c-btn2:hover {
+  color: #fff;
+  background-color: #fa983a;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/* ***************** 개별영역 선언 시작 *****************  */
+/* ************** Header Area Start **************  */
+#header {
+  padding: 0;
+}
+
+/* Logo */
+#header h1 {
+  width: 200px;
+  height: 80px;
+}
+
+#header h1 a {
+  background-image: url(../images/xl/logo.png);
+  background-position: 0 50%;
+}
+
+/* Gnb */
+#header #gnb li {
+  margin-left: 20px;
+}
+
+#header #gnb li a {
+  padding: 8px 10px;
+  font: 600 16px "Poppins", sans-serif;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: #FA983A !important;
+}
+
+/* ************** Intro Area Start **************  */
+#intro #slider, #intro #slider .carousel-item {
+  height: 80vh;
+}
+
+.carousel-indicators [data-bs-target] {
+  border: 0;
+}
+
+#intro #slider .carousel-item {
+  background: no-repeat top center/cover;
+}
+#intro #slider .carousel-item:nth-child(1) {
+  background-image: url(../images/xl/slider1.png);
+}
+#intro #slider .carousel-item:nth-child(2) {
+  background-image: url(../images/xl/slider2.png);
+}
+#intro #slider .carousel-item:nth-child(3) {
+  background-image: url(../images/xl/slider3.png);
+}
+
+#intro #slider .carousel-caption {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+#intro #slider .carousel-caption .container {
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#intro #slider .carousel-caption .container h2 {
+  font: 800 90px "Poppins", sans-serif;
+  margin-bottom: 21px;
+}
+#intro #slider .carousel-caption .container p {
+  width: 630px;
+  height: 105px;
+  margin-bottom: 21px;
+  font: 400 24px/36px "Poppins", sans-serif;
+}
+
+#intro #slider .carousel-control-next-icon,
+#intro #slider .carousel-control-prev-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+#intro .mobile-container {
+  display: none;
+}
+
+/* ************** About Area Start **************  */
+#about .left-box h2 {
+  margin-bottom: 21px;
+}
+#about .left-box h3 {
+  height: 42px;
+  margin-bottom: 21px;
+  font: 300 3.5rem/42px "Poppins", sans-serif;
+}
+#about .left-box p {
+  margin-bottom: 42px;
+}
+#about .right-box img {
+  border-radius: 30px;
+}
+
+/* ************** Service Area Start **************  */
+#service .content .card {
+  height: 100%;
+  padding: 63px 30px;
+  border: 1px solid #f2f2f2;
+  background: #f6f6f6;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+#service .content .card:hover {
+  cursor: pointer;
+  box-shadow: 8px 8px 8px #e5e5e5;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+#service .content .card i {
+  font-size: 5rem;
+  margin-bottom: 21px;
+  color: #fa983a;
+}
+#service .content .card h3 {
+  margin-bottom: 21px;
+}
+
+/* ************** Projects Area Start **************  */
+#projects .content .col-lg-4 {
+  overflow: hidden;
+}
+#projects .content .col-lg-4 img {
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+#projects .content .col-lg-4:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* ************** Team Area Start **************  */
+#team .content .team-box {
+  width: 306px;
+  background-color: #fa983a;
+  position: relative;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+#team .content .team-box:hover {
+  width: 100%;
+}
+#team .content .team-box .img-box {
+  width: 306px;
+  height: 441px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+}
+#team .content .team-box h3 {
+  width: 196px;
+  height: 84px;
+  padding-left: 20px;
+}
+#team .content .team-box h3 span {
+  display: block;
+  font: 300 1.4rem/42px "Poppins", sans-serif;
+}
+#team .content .team-box .sns {
+  width: 86px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  top: 21px;
+}
+#team .content .team-box .sns li {
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* ************** Newsletter Area Start **************  */
+#newsletter {
+  color: #fff;
+  background-color: #fad390;
+}
+#newsletter .container {
+  padding: 42px 0;
+  position: relative;
+}
+#newsletter .container h3 {
+  height: 42px;
+  line-height: 42px;
+}
+#newsletter .container a {
+  position: absolute;
+  right: 0;
+  top: 38px;
+}
+
+/* ************** Footer Area Start **************  */
+#footer {
+  color: #fff;
+  background-color: #262626;
+}
+#footer .f-top {
+  border-bottom: 1px solid #fff;
+}
+#footer .f-top h3 {
+  margin-bottom: 42px;
+}
+#footer .f-top .row > div:nth-child(1) img {
+  width: 330px;
+  margin-bottom: 21px;
+}
+#footer .f-top .row > div:nth-child(1) p {
+  margin-bottom: 21px;
+  font-size: 1.8rem;
+}
+#footer .f-top .row > div:nth-child(1) ul li {
+  margin-bottom: 18px;
+}
+#footer .f-top .row > div:nth-child(2) li {
+  height: 42px;
+  margin-bottom: 21px;
+  font-size: 1.8rem;
+}
+#footer .f-top .row > div:nth-child(2) li span {
+  display: block;
+  font-size: 1.4rem;
+}
+#footer .f-top .row > div:nth-child(3) .form-floating {
+  margin-bottom: 21px;
+}
+#footer .f-top .row > div:nth-child(3) .form-floating input {
+  height: 63px;
+  border: 0;
+  border-radius: 0;
+  background-color: #595959;
+  text-indent: 5px;
+}
+#footer .f-top .row > div:nth-child(3) .form-floating label {
+  padding: 1.8rem 0.75rem;
+  font-size: 1.6rem;
+}
+#footer .f-top .row > div:nth-child(3) #input_submit {
+  width: 100%;
+  height: 63px;
+  color: #fff;
+  background-color: #fa983a;
+}
+#footer .f-top .row > div:nth-child(3) #input_submit:hover {
+  color: #262626;
+  background-color: #fad390;
+}
+#footer .f-bottom {
+  height: 63px;
+}
+#footer .f-bottom p {
+  height: 100%;
+  line-height: 63px;
+  text-align: center;
+}
+
+#top_btn {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 4rem;
+  color: #262626;
+  background-color: #fad390;
+  position: fixed;
+  right: 50px;
+  bottom: 80px;
+  z-index: 9999;
+  border-radius: 7px;
+}
+#top_btn:hover {
+  color: #fff;
+  background-color: #fa983a;
+}
+
+/* ***************** 미디어쿼리 선언 시작 *****************  */
+@media screen and (max-width: 1399px) {
+  /* ************** Intro Area Start **************  */
+  #intro #slider .carousel-caption .container h2 {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 1199px) {
+  /* ***************** 공통영역 선언 시작 *****************  */
+  h2 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  /* ************** Intro Area Start **************  */
+  #intro #slider .carousel-caption .container h2 {
+    font-size: 7rem;
+  }
+  #intro #slider .carousel-caption .container p {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  /* ************** About Area Start **************  */
+  #about .left-box h3 {
+    font-size: 3rem;
+  }
+  /* ************** Team Area Start **************  */
+  #team .content .team-box {
+    width: 216px;
+  }
+  #team .content .team-box .img-box {
+    width: 216px;
+    height: auto;
+  }
+  /* ************** Newsletter Area Start **************  */
+  #newsletter .container a {
+    width: 160px;
+    height: 42px;
+    line-height: 42px;
+  }
+  /* ************** Footer Area Start **************  */
+  #footer .f-top .row > div:nth-child(1) img {
+    width: 240px;
+  }
+  #footer .f-top .row > div:nth-child(1) p,
+  #footer .f-top .row > div:nth-child(2) li {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* ***************** 공통영역 선언 시작 *****************  */
+  .c-btn1, .c-btn2 {
+    width: 150px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 1.4rem;
+  }
+  /* ***************** Header Area Start *****************  */
+  #header {
+    height: auto;
+  }
+  #header .nav-header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+  }
+  #header .nav-header #mobile_btn {
+    padding: 8px 15px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  #header .nav-header #mobile_btn:hover {
+    background-color: #ccc;
+  }
+  #header .nav-header #mobile_btn:focus {
+    box-shadow: none;
+  }
+  #header .nav-header #mobile_btn .navbar-toggler-icon {
+    width: 2.1rem;
+  }
+  #header #gnb ul {
+    padding: 25px 0;
+  }
+  /* ***************** About Area Start *****************  */
+  #about .left-box {
+    margin-bottom: 63px;
+  }
+  /* ***************** Team Area Start *****************  */
+  #team .content .team-box {
+    width: 100%;
+  }
+  #team .content .team-box .img-box {
+    width: 100%;
+    height: 399px;
+    overflow: hidden;
+  }
+  #team .content .team-box .sns {
+    width: 170px;
+    height: 42px;
+    top: auto;
+    bottom: 21px;
+    right: 50px;
+  }
+  #team .content .team-box .sns li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  #team .content .team-box .sns li:last-child {
+    margin-right: 0;
+  }
+  /* ***************** Newsletter Area Start *****************  */
+  #newsletter .container {
+    text-align: center;
+  }
+  #newsletter .container h3 {
+    margin-bottom: 21px;
+  }
+  #newsletter .container a {
+    position: static;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* ***************** 공통영역 선언시작 *****************  */
+  h2 {
+    font-size: 4rem;
+  }
+  /* ***************** Intro Area Start *****************  */
+  #intro .container-fluid {
+    display: none;
+  }
+  #intro .mobile-container {
+    display: block;
+  }
+  #intro {
+    height: 630px !important;
+    background: url(../images/sm/slider1.png) no-repeat top center/cover;
+  }
+  #intro .mobile-container {
+    height: 100%;
+    color: #fff;
+    position: relative;
+  }
+  #intro .mobile-container .caption {
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  #intro .mobile-container .caption p {
+    width: 70%;
+    margin-bottom: 21px;
+  }
+  /* ***************** About Area Start *****************  */
+  #about .left-box h3 {
+    font-size: 3rem;
+  }
+  /* ***************** Service Area Start *****************  */
+  #service .content .card i {
+    font-size: 4rem;
+  }
+  /* ***************** Team Area Start *****************  */
+  #team .content .team-box .img-box {
+    height: 315px;
+  }
+}
+@media screen and (max-width: 575px) {
+  /* ***************** 공통영역 선언시작 *****************  */
+  h2 {
+    font-size: 4rem;
+  }
+  /* *************** Footer Area Start ***************** */
+  #footer .f-top .row > div {
+    margin-bottom: 42px;
+  }
+  #footer .f-top .row > div:last-child {
+    margin-bottom: 0;
+  }
+}

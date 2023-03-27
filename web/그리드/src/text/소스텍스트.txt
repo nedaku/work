@@ -1,0 +1,30 @@
+
+ [ 프로젝트 1 텍스트 소스자료 - 960GS ]
+
+1. header 영역
+
+  *  HOME     WORKS    NEWS    PAGES    CONTACT  
+
+
+
+2.  Contents 영역
+
+  *  WELCOME   
+  *  Andrew Hells.
+     Designer & Developer
+  * All   Branding   Mobile   Print    Web
+     
+  * ⓒ 2020 Master Theme.
+     Crafted & Designed By WP Create.
+
+  * Wand to work with us? Let's with us.
+    hello@abcpeople.com
+
+[ Font  icon ]
+fa-search
+fa-facebook
+fa-twitter 
+fa-google
+fa-dribbble
+
+

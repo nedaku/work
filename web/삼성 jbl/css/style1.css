@@ -1,0 +1,718 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap {
+  width: 100%;
+  height: auto;
+}
+
+#header {
+  height: 63px;
+}
+
+#mainview {
+  height: 651px;
+}
+
+#contents {
+  height: auto;
+}
+
+#contents .product-select {
+  padding: 105px 0 84px;
+}
+
+#contents .event {
+  height: 546px;
+}
+
+#contents .show {
+  height: 630px;
+}
+
+#contents .product-infor {
+  height: auto;
+}
+
+#contents .magazine {
+  height: 525px;
+}
+
+#footer {
+  height: auto;
+}
+
+#footer .f-top {
+  height: 399px;
+  padding: 63px 0 42px;
+}
+
+#footer .f-bottom {
+  height: 189px;
+  padding: 21px 0;
+}
+
+.container {
+  width: 1170px;
+  height: 100%;
+  margin: auto;
+}
+
+
+/* ******************* 공통영역 선언시작 **************** */
+body {
+  color: #333;
+}
+
+/* Button Style Settings */
+.btn {
+  display: inline-block;
+  width: 130px;
+  height: 42px;
+  font: bold 1.4rem/42px "Nanum Gothic", sans-serif;
+  border-radius: 21px;
+  text-align: center;
+
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.btn1 {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn1:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.btn2 {
+  color: #333;
+  border: 1px solid #333;
+}
+
+.btn2:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
+
+
+/* ***************** 개별영역 선언시작 ************* */
+
+
+
+/* ************** header Area Start ********** */
+#header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 42px;
+}
+
+#header .container {
+  position: relative;
+}
+
+
+/* Logo */
+#header h1 {
+  width: 169px;
+  height: 27px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#header h1 a {
+  background-image: url(../images/logo.png);
+}
+
+
+/* Gnb */
+#header .gnb {
+  width: 370px;
+  height: 63px;
+  float: left;
+}
+
+#header .gnb li {
+  height: 63px;
+  float: left;
+  margin-right: 20px;
+}
+
+#header .gnb li:last-child {
+  margin-right: 0;
+}
+
+#header .gnb li a {
+  display: block;
+  height: 63px;
+  font: bold 1.4rem/63px "Nanum Gothic", sans-serif;
+  position: relative;
+}
+
+#header .gnb li a:hover {
+  color: #3f10fa;
+}
+
+#header .gnb li a:hover::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #3f10fa;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+/* Q-menu */
+#header .q-menu {
+  width: 270px;
+  height: 63px;
+  float: right;
+}
+
+#header .q-menu a {
+  display: inline-block;
+  height: 100%;
+  font: bold 1.2rem/63px "Nanum Gothic", sans-serif;
+  margin-right: 5px;
+}
+
+#header .q-menu a:hover {
+  color: #3f10fa;
+}
+
+#header .q-menu .icon-group {
+  display: inline-block;
+  height: 100%;
+  margin-left: 10px;
+}
+
+#header .q-menu .icon-group a {
+  font-size: 1.8rem;
+}
+
+
+/* ************** mainview Area Start ********** */
+#mainview {
+  background: url(../images/mainview-bg.jpg) no-repeat top center;
+}
+
+#mainview .container {
+  padding: 126px 0 0 70px;
+}
+
+#mainview .container .logo-box {
+  width: 130px;
+  height: 126px;
+  margin-bottom: 21px;
+}
+
+#mainview .container h2 {
+  height: 126px;
+  margin-bottom: 42px;
+  font: bold 5.4rem/1.3 "Nanum Gothic", sans-serif;
+  color: #fff;
+}
+
+
+
+/* ************** contents Area Start ********** */
+
+/* product-select title */
+#contents .product-select .title {
+  height: 84px;
+  margin-bottom: 63px;
+  text-align: center;
+}
+
+#contents .product-select .title h2 {
+  height: 42px;
+  margin-bottom: 21px;
+  font: bold 3.6rem "Nanum Gothic", sans-serif;
+}
+
+#contents .product-select .title a {
+  display: inline-block;
+  height: 21px;
+  font: bold 1.4rem/21px "Nanum Gothic", sans-serif;
+}
+
+#contents .product-select .title a i {
+  margin-left: 5px;
+}
+
+
+/* product-select content */
+#contents .product-select .content {
+  display: flex;
+  justify-content: space-between;
+  height: 483px;
+}
+
+#contents .product-select .content>div {
+  width: 270px;
+  text-align: center;
+  background-color: #f2f2f2;
+
+
+}
+
+#contents .product-select .content .img-box {
+  width: 100%;
+  height: 273px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#contents .product-select .content h3 {
+  height: 21px;
+  font: bold 1.5rem/21px "Nanum Gothic", sans-serif;
+}
+
+#contents .product-select .content p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 84px;
+}
+
+
+/* ************** event Area Start ********** */
+
+#contents .event {
+  margin-bottom: 84px;
+}
+
+#contents .event .container {
+  background: #e6e6e6;
+  background:
+    url(../images/eventimg.png)no-repeat 500px 60px,
+    -moz-linear-gradient(top, #e6e6e6 0%, rgba(242, 242, 242, 1) 100%);
+  background:
+    url(../images/eventimg.png)no-repeat 500px 60px,
+    -webkit-linear-gradient(top, #e6e6e6 0%, rgba(242, 242, 242, 1) 100%);
+  background:
+    url(../images/eventimg.png)no-repeat 500px 60px,
+    linear-gradient(to bottom, #e6e6e6 0%, rgba(242, 242, 242, 1) 100%);
+
+  position: relative;
+  padding: 168px 0 0 70px;
+}
+
+#contents .event .container .event-title {
+  position: absolute;
+  top: 21px;
+  right: 0;
+  width: 170px;
+  height: 21px;
+  text-align: center;
+  font: bold 1.5rem/21px "Nanum Gothic", sans-serif;
+}
+
+#contents .event .container h2 {
+  height: 42px;
+  font: bold 4.4rem/42px "Nanum Gothic", sans-serif;
+  margin-bottom: 42px;
+
+
+}
+
+#contents .event .container p {
+  height: 42px;
+  font-size: 1.4rem;
+  margin-bottom: 42px;
+}
+
+/* ************** show Area Start ********** */
+#contents .show {
+  margin-bottom: 84px;
+}
+
+#contents .show .container {
+  color: #fff;
+  text-align: center;
+  padding-top: 105px;
+  background: url(../images/showimg.png) no-repeat 0 0;
+}
+
+#contents .show .container h2 {
+  height: 63px;
+  margin-bottom: 21px;
+  font: 800 5.5rem/63px "Nanum Gothic", sans-serif;
+}
+
+#contents .show .container .logo-box {
+  margin-bottom: 21px;
+}
+
+#contents .show .container p {
+  font-size: 1.8rem;
+  padding: 0 230px;
+}
+
+/* ************** product-infor Area Start ********** */
+#contents .product-infor .container>div {
+  display: flex;
+  height: 525px;
+}
+
+#contents .product-infor .container>div:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#contents .product-infor .container>div img {
+  flex: 1;
+}
+
+#contents .product-infor .container>div .text-box {
+  flex: 1;
+  padding: 147px 100px 0 85px;
+}
+
+#contents .product-infor .text-box h3 {
+  height: 42px;
+  margin-bottom: 42px;
+  font: bold 5rem/42px "Nanum Gothic", sans-serif;
+}
+
+#contents .product-infor .text-box h3+p {
+  height: 21px;
+  margin-bottom: 21px;
+  font: bold 1.6rem/21px "Nanum Gothic", sans-serif;
+}
+
+#contents .product-infor .text-box h3+p+p {
+  height: 42px;
+  margin-bottom: 42px;
+  font-size: 1.4rem;
+}
+
+
+
+/* ************** magazine Area Start ********** */
+#contents .magazine .container {
+  padding-top: 105px;
+  text-align: center;
+  background: url(../images/magazineimg.png) no-repeat 0 0;
+}
+
+#contents .magazine .container h2 {
+  height: 63px;
+  font: bold 5rem/63px "Nanum Gothic", sans-serif;
+  margin-bottom: 42px;
+}
+
+#contents .magazine .container p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 189px;
+}
+
+
+
+
+/* ************** footer Area Start ********** */
+#footer {
+  border-top: 1px solid #ccc;
+}
+
+
+/* ************** f-top Area Start ********** */
+#footer .f-top {
+  background-color: #f7f7f7;
+}
+
+#footer .f-top .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  /* <= 플렉스 아이템 개행처리하기 */
+}
+
+#footer .f-top .container>div {
+  height: 210px;
+}
+
+#footer .f-top .container h3 {
+  height: 21px;
+  margin-bottom: 21px;
+  font: bold 1.4rem/21px "Nanum Gothic", sans-serif;
+
+}
+
+/* Sitemap */
+#footer .f-top .sitemap {
+  width: 570px;
+}
+
+#footer .f-top .sitemap li {
+  width: 50%;
+  height: 21px;
+  float: left;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+#footer .f-top .sitemap li a:hover {
+  color: #c00;
+}
+
+/* customer */
+#footer .f-top .customer {
+  width: 270px;
+}
+
+#footer .f-top .customer li {
+  height: 21px;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+#footer .f-top .customer li a:hover {
+  color: #c00;
+}
+
+#footer .f-top .customer li i {
+  margin-right: 15px;
+}
+
+#footer .f-top .customer li i:nth-child(2) {
+  font-size: 1.6rem;
+  margin-right: 15px;
+}
+
+
+/* sns */
+#footer .f-top .sns {
+  width: 270px;
+}
+
+#footer .f-top .sns>div {
+  height: 42px;
+  line-height: 42px;
+  margin-bottom: 21px;
+}
+
+#footer .f-top .sns .sns-group a {
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+#footer .f-top .sns .mark-group a {
+  margin-right: 10px;
+}
+
+/* Top Button */
+#footer .f-top .top-btn {
+  display: block;
+  width: 50px;
+  height: 21px;
+  text-align: left;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  font: bold 1.3rem/21px "Nanum Gothic", sans-serif;
+}
+
+#footer .f-top .top-btn:hover {
+  color: #c00;
+}
+
+
+/* Copyright */
+#footer .f-top p {
+  height: 21px;
+  font: 400 1.4rem/21px arial, sans-serif;
+  margin-top: 42px;
+}
+
+/* ************** f-bottom Area Start ********** */
+
+#footer .f-bottom {
+  background-color: #333;
+}
+
+/* f-menu */
+#footer .f-bottom .f-menu {
+  height: 42px;
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+#footer .f-bottom .f-menu li {
+  display: inline-block;
+  height: 42px;
+  font: bold 1.3rem/42px "Nanum Gothic", sans-serif;
+  margin: 0 10px;
+}
+
+#footer .f-bottom .f-menu li a {
+  color: #fff;
+}
+
+#footer .f-bottom .f-menu li a:hover {
+  color: #fc0;
+}
+
+/* address */
+#footer .f-bottom address {
+  font-size: 1.2rem;
+  color: #fff;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+/* ************** Popup Area Start ********** */
+
+/* Popup Button */
+.popup-btn {
+  width: 120px;
+  height: 70px;
+  position: fixed;
+  right: -90px;
+  top: 40%;
+
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+  -moz-transform: rotate(-90deg) translateY(-50%);
+  -o-transform: rotate(-90deg) translateY(-50%);
+  transform: rotate(-90deg) translateY(-50%);
+
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+
+}
+
+.popup-btn:hover {
+  right: -80px
+}
+
+.popup-btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: bold 1.4rem/40px "Nanum Gothic", sans-serif;
+  color: #fff;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+  background-color: #3f10fa;
+}
+
+/* Popup Content */
+.light-box-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.light-box-wrap .light-box {
+  width: 450px;
+  height: 600px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* light-box-header */
+.light-box-wrap .light-box-header {
+  height: 21px;
+  line-height: 21px;
+  margin-bottom: 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.light-box-wrap .light-box-header img {
+  width: 123px;
+}
+
+.light-box-wrap .light-box-header a {
+  display: inline-block;
+  height: 21px;
+  width: 21px;
+  font-size: 20px;
+  position: relative;
+  top: -1px
+}
+
+
+
+/* light-box-header */
+
+.light-box-wrap .light-box-content h3+p,
+.light-box-wrap .light-box-content h3 {
+  text-align: center;
+  height: 21px;
+  color: #0c38ca;
+}
+
+.light-box-wrap .light-box-content h3 {
+  font: bold 2rem/21px "Nanum Gothic", sans-serif;
+  margin-bottom: 10px;
+}
+
+.light-box-wrap .light-box-content h3+p {
+  margin-bottom: 42px;
+  font: bold 1.5rem/21px "맑은 고딕", sans-serif;
+}
+
+.light-box-wrap .light-box-content ul li {
+  height: 105px;
+  margin-bottom: 21px;
+  padding: 20px 20px 20px 100px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  position: relative;
+}
+
+.light-box-wrap .light-box-content ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.light-box-wrap .light-box-content ul li h4 {
+  height: 21px;
+  font: bold 1.5rem/21px "Nanum Gothic", sans-serif;
+  margin-bottom: 5px;
+}
+
+.light-box-wrap .light-box-content ul li p {
+  font-size: 1.4rem;
+}
+
+.light-box-wrap .light-box-content ul li .icon {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}

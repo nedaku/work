@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap{ width: 1170px; margin: auto; } 
+#header{ height: 48px; margin: 48px 0 72px; }
+#mainview{ height: 504px; margin-bottom: 96px; }
+#contents{ 
+  height: auto; 
+  position: relative; 
+  padding-left: 200px; 
+  padding-bottom: 72px;
+}
+ 
+ 
+/* ******************* 개별영역 선언시작 **************** */
+
+/* ************* header Area Start ************ */
+/* Logo */
+#header h1{
+  width: 48px; height: 48px; float: left; margin-right: 50px;
+}
+#header h1 a{ background-image: url(../images/logo.png); }
+
+
+/* Gnb */
+#header .gnb{width: 400px; height: 48px; float: left;}
+#header .gnb li{height: 100%; float: left; margin-right: 20px;}
+#header .gnb li:last-child{margin-right: 0;}
+#header .gnb li a{
+  display: block;
+  height: 100%;
+  font: bold 1.4rem/48px 'Nanum Gothic', sans-serif;
+  color: #707070;
+}
+#header .gnb li a:hover{ color: #2d2d2d; }
+
+
+/* Login */
+.login{
+  width: 230px; 
+  height: 48px; 
+  line-height: 48px; 
+  float: right;
+  text-align: right;
+}
+.login a{
+  color: #2d2d2d;
+  margin: 0 3px;
+  font: bold 1.4rem 'Nanum Gothic', sans-serif;
+}
+.login a:hover{color: #c00;}
+.login>a:nth-child(2){ color: #707070; }
+.login span{margin-left: 70px;}
+
+
+/* ************* mainview Area Start ************ */
+#mainview img{ width: 100%; height: 100%; }
+
+
+/* ************* contents Area Start ************ */
+
+/* Author Area Start */
+#contents .author{
+  width: 70px; 
+  height: 192px;
+  position: absolute; left: 0; top: 0; 
+}
+#contents .author span{
+  display: block;
+  width: 100px;
+  height: 20px;
+  font: bold 1.4rem/20px 'Nanum Gothic', sans-serif;
+  color: #707070;
+  position: absolute; left: 65%; bottom: 0;
+
+  /* 회전 중심축 설정 : transform-origin */
+  transform-origin : 0 100% 0;
+
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+#contents .author span strong{ color: #2d2d2d; }
+
+
+/* page-title Area Start */
+#contents .page-title{
+  height: 48px; 
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+#contents .page-title>div{
+  width: 200px; 
+  height: 48px;
+  font: 500 1.4rem/48px 'Roboto', sans-serif;
+  color: #2d2d2d;
+}
+#contents .page-title .title{
+  text-align: right;
+  color: #c60;
+}
+
+
+/* page-content Area Start */
+#contents .page-content h2{
+  height: 48px;
+  margin-bottom: 96px;
+  font: 300 6rem/48px 'Roboto', sans-serif;
+  letter-spacing: -1px;
+}
+#contents .page-content h2+p span{
+  display: block;
+  width: 40px;
+  height: 33px;
+  font: 6rem 'Roboto', sans-serif;
+  color: #c60;
+  float: left;
+  margin-right: 30px;
+  position: relative; top: -10px;
+}
+#contents .page-content p{
+  font: 1.6rem/26px arial, sans-serif;
+  margin-bottom: 48px;
+}
+#contents .page-content p+p{
+  margin-bottom: 96px;
+}
+#contents .page-content .photo-box{
+  height: 432px;
+  display: flex;
+  justify-content: space-between;
+}
+#contents .page-content .photo-box1{
+  flex-direction: row-reverse;
+}
+#contents .page-content .photo-box h3,
+#contents .page-content .photo-box img{
+  width: 470px;
+  height: 432px;
+}
+#contents .page-content .photo-box h3{
+  font: bold 1.6rem/26px 'Roboto', sans-serif;
+}
+#contents .page-content .photo-box1 h3{ padding: 144px 100px 0 70px; }
+#contents .page-content .photo-box2 h3{ padding: 144px 70px 0 170px; }
+#contents .page-content .photo-box2 img{ 
+  position: relative; top: -96px;
+}
+
+#contents .page-content p:last-of-type{
+  font: 1.8rem/26px 'Roboto', sans-serif;
+  padding-right: 250px;
+}
+
+
+/* footer Area Start */
+#contents .footer{ height: 120px; }
+#contents .footer h3{
+  font: bold 1.8rem/24px 'Roboto', sans-serif;
+  color: #2d2d2d;
+  margin-bottom: 24px;
+}
+#contents .footer .icon-group{ height: 72px; }
+#contents .footer .icon-group a{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font: 500 1.5rem/60px 'Roboto', sans-serif;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-right: 11px;
+}

@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap{ width: 1170px; margin: auto; padding-bottom: 63px; } 
+#header{ height: 42px; margin: 42px 0 84px; }
+#contents{ height: auto; margin-bottom: 126px; }
+#footer{height: 42px;}
+ 
+ 
+/* ******************* 개별영역 선언시작 **************** */
+
+/* ************** header Area Start *********** */
+#header{display: flex; justify-content: space-between;}
+
+/* Logo */
+#header h1{ width: 42px; height: 42px; }
+#header h1 a{ background-image: url(../images/logo.png); }
+
+/* Gnb */
+#header .gnb{width: 470px; height: 42px;}
+#header .gnb li{height: 42px; float: left;}
+#header .gnb li a{
+  display: block;
+  height: 100%;
+  padding: 0 15px;
+  font: bold 1.6rem/42px 'Nanum Gothic', sans-serif;
+  color: #333;
+}
+#header .gnb li:last-child a{padding-right: 0;}
+#header .gnb li a:hover{ color: #c00; }
+
+
+/* ************** contents Area Start *********** */
+
+/* hash */
+#contents .hash{
+  height: 21px;
+  margin-bottom: 21px;
+  font: bold 1.8rem/21px 'Roboto', sans-serif;
+}
+
+
+/* title */
+#contents h2{
+  height: 105px;
+  margin-bottom: 63px;
+  font: 300 5.4rem/55px 'Roboto', sans-serif; 
+}
+
+
+/* g-menu */
+#contents .g-menu{
+  height: 42px;
+  padding-top: 8px;
+  margin-bottom: 63px;
+}
+#contents .g-menu li{
+  height: 25px;
+  float: left;
+}
+#contents .g-menu li a{
+  display: block;
+  height: 100%;
+  padding: 0 10px;
+  font: bold 1.4rem/25px "Nanum Gothic", sans-serif;
+  border-radius: 12px;
+}
+#contents .g-menu li a:hover{
+  background-color: #888;
+  color: #fff;
+}
+
+/* 활성화 클래스 */
+.gmenu-act{
+  background-color: #888 !important;
+  color: #fff !important;
+}
+
+
+/* gallery */
+#contents .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 274px 274px 127px 274px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+#contents .gallery img{ width: 100%; height: 100%; }
+#contents .gallery .box1 { grid-area: 1 / 1 / 2 / 2; }
+#contents .gallery .box2 { grid-area: 1 / 2 / 2 / 3; }
+#contents .gallery .box3 { grid-area: 1 / 3 / 2 / 4; }
+#contents .gallery .box4 { grid-area: 2 / 1 / 3 / 2; }
+#contents .gallery .box5 { grid-area: 3 / 1 / 5 / 2; }
+#contents .gallery .box6 { grid-area: 2 / 2 / 4 / 4; }
+#contents .gallery .box7 { grid-area: 4 / 2 / 5 / 3; }
+#contents .gallery .box8 { grid-area: 4 / 3 / 5 / 4; }
+
+
+
+/* ************** footer Area Start *********** */
+#footer{display: flex;}
+#footer>div{flex: 1; color: #777;}
+#footer>div:nth-child(1), #footer>div:nth-child(3){
+  font: 500 1.6rem/21px 'Roboto', sans-serif;  
+}
+#footer>div:nth-child(1){order: 1;}
+#footer>div:nth-child(2){
+  order: 3; 
+  text-align: right; 
+  font-size: 2rem;
+  line-height: 42px;
+}
+#footer>div:nth-child(3){order: 2;}
+ 
+
+

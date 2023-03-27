@@ -1,0 +1,400 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ******************* 레이아웃 구성시작 **************** */
+#wrap{ width: 100%; height: auto; }
+
+#header{ height: 63px; }
+#contents{ height: auto; }
+#footer{ height: 105px; background-color: #333; }
+
+.container{ width: 1170px; height: 100%; margin: auto; }
+
+ 
+/* ******************* 공통영역 선언시작 **************** */
+ 
+/* Button Style Settings */
+.btn{
+  display: inline-block;
+  height: 42px;
+  font: bold 1.6rem/42px "Nanum Gothic", sans-serif;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.btn1{width: 170px; background-color: #ad5251; color: #fff;}
+.btn1:hover{background-color: #50adae;}
+
+.btn2{padding: 0 20px; border: 1px solid #000;}
+.btn2:hover{background-color: #ad5251; color: #fff;}
+
+
+/* ************** header Area Start *************** */
+
+/* Logo */
+#header h1{width: 103px; height: 63px; float: left;}
+#header h1 a{
+  background-image: url(../images/index/i_logo.png);
+  background-position: 0 50%;
+}
+
+
+/* Gnb */
+#header .gnb{width: 500px; height: 63px; float: right;}
+#header .gnb li{height: 100%; float: left;}
+#header .gnb li a{
+  display: block;
+  height: 100%;
+  padding: 0 15px;
+  font:bold 1.4rem/63px "Nanum Gothic", sans-serif;
+}
+#header .gnb li a:hover{ color: #c00; }
+
+
+/* ************** contents Area Start *************** */
+#contents .p-title{
+  height: 105px;
+  padding-top: 21px;
+  background-color: #e5e5e5;
+  border-top: 3px solid #ccc;
+}
+#contents .p-title .container{position: relative;}
+#contents .p-title h2{
+  height: 42px;
+  font: 400 3rem/42px "Nanum Gothic", sans-serif;
+}
+#contents .p-title p{
+  height: 21px;
+  font: 400 1.4rem/21px "맑은 고딕", sans-serif;
+}
+#contents .p-title .page-nav{
+  width: 200px;
+  height: 21px;
+  font: bold 1.3rem/21px "Nanum Gothic", sans-serif;
+  text-align: right;
+  position: absolute; right: 40px; bottom: 21px;
+}
+#contents .p-title .page-nav span{
+  color: #c00;
+  margin-left: 10px;
+}
+
+
+/* 아코디언 활성화 클래스 */
+.act{background-image: url(../images/sub/s1_bullet-up.png) !important;}
+/* .act div{display: block !important;} */
+
+
+
+/* ************** footer Area Start *************** */
+#footer p{
+  height: 100%;
+  font: 400 1.6rem/105px arial, sans-serif;
+  color: #fff;
+}
+
+
+ 
+/* ******************* 개별영역 선언시작 **************** */
+
+/* ************* Sub1 Page Area Start ************** */
+#sub1 .p-content>div{ 
+  padding: 105px 0; 
+}
+#sub1 .p-content>div .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* section1 Area Start */
+#sub1 .p-content .section1 .container{flex-direction: row-reverse;}
+#sub1 .p-content .section1 .text-box{width: 570px;}
+#sub1 .p-content .section1 .text-box h3{
+  height: 42px;
+  font: bold 1.8rem/42px "Nanum Gothic", sans-serif;
+  margin-bottom: 21px;
+  color: #888;
+}
+#sub1 .p-content .section1 .text-box h3 span{color: #2d2d2d;}
+#sub1 .p-content .section1 .text-box p{
+  font-size: 1.4rem;
+  margin-bottom: 21px;
+}
+
+
+/* section2 Area Start */
+#sub1 .p-content .section2{background-color: #e5e5e5;}
+#sub1 .p-content .section2>div>div{ width: 570px; }
+
+#sub1 .p-content .section2 h3{
+  height: 42px;
+  font: bold 2rem/42px "Nanum Gothic", sans-serif;
+  margin-bottom: 21px;
+  color: #888;
+}
+#sub1 .p-content .section2 h3 span{color: #2d2d2d;}
+#sub1 .p-content .section2 p,
+#sub1 .p-content .section2 .qna div{font-size: 1.4rem;}
+
+
+/* left-box */
+#sub1 .p-content .left-box p{margin-bottom: 21px;}
+#sub1 .p-content .left-box ul{margin-top: 63px;}
+#sub1 .p-content .left-box li{
+  height: 42px;
+  margin-bottom: 21px;
+  border-bottom: 2px solid #c00;
+}
+#sub1 .p-content .left-box li:nth-child(1){width: 100%;}
+#sub1 .p-content .left-box li:nth-child(2){width: 95%;}
+#sub1 .p-content .left-box li:nth-child(3){width: 75%;}
+#sub1 .p-content .left-box li h4{
+  height: 42px;
+  font: bold 1.6rem/42px "Nanum Gothic", sans-serif;
+  position: relative;
+}
+#sub1 .p-content .left-box li h4 span{
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 70px;
+  height: 25px;
+  background-color: #000;
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute; right: 0; top: 5px;
+}
+#sub1 .p-content .left-box li h4 span::after{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  position: absolute; left: 50%; bottom: 0;
+  margin-left: -4px;
+
+  -webkit-transform: rotate(45deg) translateY(3px);
+  -moz-transform: rotate(45deg) translateY(3px);
+  -o-transform: rotate(45deg) translateY(3px);
+  transform: rotate(45deg) translateY(3px);
+}
+
+
+/* right-box */
+#sub1 .p-content .right-box .qna li{
+  height: auto;
+  margin-bottom: 10px;
+}
+#sub1 .p-content .right-box .qna a{
+  display: block;
+  height: 35px;
+  font: bold 1.4rem/35px "Nanum Gothic", sans-serif;
+  text-indent: 20px;
+  background: #b5b5b5 url(../images/sub/s1_bullet-down.png) no-repeat 97% 50%;
+}
+#sub1 .p-content .right-box .qna div{
+  padding: 20px;
+  background-color: #c7c7c7;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  display: none;
+}
+
+
+
+/* ************* Sub2 Page Area Start ************** */
+#sub2 .p-content{ padding: 63px 0 105px; }
+
+#sub2 .p-content p{
+  width: 830px;
+  height: 42px;
+  font-size: 1.4rem;
+  margin-bottom: 63px;
+}
+
+
+/* g-menu */
+#sub2 .p-content .g-menu{
+  height: 84px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; 
+  padding: 21px 0;
+  margin-bottom: 63px;
+}
+#sub2 .p-content .g-menu li{
+  height: 42px;
+  float: left;
+  margin-right: 10px;
+}
+#sub2 .p-content .g-menu li a{
+  display: block;
+  height: 100%;
+  padding: 0 20px;
+  font: bold 1.4rem/42px "Nanum Gothic", sans-serif;
+  border: 1px solid #888;
+  background-color: #f2f2f2;
+}
+#sub2 .p-content .g-menu li a:hover{background-color: #e2e2e2;}
+
+
+/* gallery */
+#sub2 .p-content .gallery li{
+  width: 270px;
+  height: 273px;
+  border: 1px solid #888;
+  text-align: center;
+  float: left;
+  margin: 0 30px 21px 0;
+}
+#sub2 .p-content .gallery li:nth-child(4n){margin-right: 0;}
+#sub2 .p-content .gallery li:nth-child(n+5){margin-bottom: 0;}
+#sub2 .p-content .gallery li img{
+  width: 100%;
+  height: 189px;
+  margin-bottom: 21px;
+}
+#sub2 .p-content .gallery li h4,
+#sub2 .p-content .gallery li .date{
+  height: 21px;
+  font: bold 1.6rem/21px "Nanum Gothic", 1em sans-serif;
+}
+#sub2 .p-content .gallery li .date{
+  font-size: 1.3rem;
+  color: #c00;
+}
+
+
+
+/* ************* Sub3 Page Area Start ************** */
+#sub3 .p-content{ padding: 63px 0 105px; }
+
+#sub3 .p-content p{
+  width: 830px;
+  height: 42px;
+  font-size: 1.4rem;
+  margin-bottom: 63px;
+}
+
+/* faq */
+#sub3 .p-content .faq{ 
+  padding: 0 70px;
+ }
+#sub3 .p-content .faq li{
+  height: auto;
+  margin-bottom: 10px;
+}
+#sub3 .p-content .faq a{
+  display: block;
+  height: 35px;
+  font: bold 1.4rem/35px "Nanum Gothic", sans-serif;
+  text-indent: 20px;
+  background: #b5b5b5 url(../images/sub/s1_bullet-down.png) no-repeat 97% 50%;
+}
+#sub3 .p-content .faq div{
+  padding: 20px;
+  background-color: #c7c7c7;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  display: none;
+
+}
+
+
+/* ************* Sub4 Page Area Start ************** */
+#sub4 .p-content{padding: 63px 0 105px;}
+#sub4 .p-content .container{
+  height: 840px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* left-box */
+#sub4 .p-content .left-box{width: 870px;}
+#sub4 .p-content .left-box p{margin: 63px 0;}
+
+/* form */
+#sub4 .p-content form>div{
+  height: 84px;
+  margin-bottom: 21px;
+}
+#sub4 .p-content form>div label{
+  display: block;
+  height: 42px;
+  font: bold 1.6rem/42px "Nanum Gothic", sans-serif;
+}
+#sub4 .p-content form>div input,
+#sub4 .p-content form>div textarea{
+  width: 100%;
+  border: 1px solid #888;
+  background-color: #f2f2f2;
+}
+#sub4 .p-content form>div input{height: 42px;}
+#sub4 .p-content form>div textarea{height: 105px;}
+
+#sub4 .p-content form>div:first-of-type{
+  display: flex;
+  justify-content: space-between;
+}
+#sub4 .p-content form>div:first-of-type>div{
+  width: 430px;
+}
+
+#sub4 .p-content form>div:last-of-type{ 
+  height: auto;
+}
+
+#sub4 .p-content form p{text-align: center;}
+#sub4 .p-content form p input{
+  border: 0;
+}
+
+
+/* right-box */
+#sub4 .p-content .right-box{width: 270px;}
+#sub4 .p-content .right-box h3{
+  height: 42px;
+  margin-bottom: 21px;
+  font: bold 1.8rem/42px "Nanum Gothic", sans-serif;
+}
+#sub4 .p-content .right-box h4{
+  height: 21px;
+  margin-bottom: 21px;
+  font: bold 1.6rem/42px "Nanum Gothic", sans-serif;
+}
+#sub4 .p-content .right-box p{
+  height: 105px;
+  margin-bottom: 42px;
+  font-size: 1.4rem;
+  line-height: 24px;
+}
+#sub4 .p-content .right-box address{
+  height: 147px;
+  padding: 35px 0;
+  border-top: 4px double #ccc;
+  border-bottom: 4px double #ccc; 
+  margin-bottom: 42px;
+  font: 1.4em/1.7 "맑은 고딕", sans-serif;
+}
+#sub4 .p-content .right-box address span{margin-left: 5px;}
+#sub4 .p-content .right-box li{
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
