@@ -1,411 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-  <title>Bootstrap Test Project2</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-  
-  <!-- Bootstrap Icon CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Bootstrap Test Project2</title>
 
-  <!-- My CSS -->
-  <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
 
-</head>
-<body>
+    <!-- Bootstrap Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
 
-  <!-- header Area Start -->
-  <div id="header">
-
-    <!-- top-header -->
-    <div id="top-header" class="bg-primary py-4 text-white d-none d-lg-block">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <h6><i class="bi bi-phone"></i> +123 456 789</h6>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- header Area Start -->
+    <div id="header">
+      <!-- top-header -->
+      <div id="top-header" class="bg-primary py-4 text-white d-none d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <h6><i class="bi bi-phone"></i> +123 456 789</h6>
+            </div>
+            <div class="col-lg-4 text-center">
+              <h6><i class="bi bi-envelope"></i> user@yourdomain.com</h6>
+            </div>
+            <div class="col-lg-4 text-end sns-group">
+              <a href="#" class="btn btn-warning text-white"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="btn btn-warning text-white"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="btn btn-warning text-white"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="btn btn-warning text-white"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
-          <div class="col-lg-4 text-center">
-            <h6><i class="bi bi-envelope"></i> user@yourdomain.com</h6>
+        </div>
+      </div>
+
+      <!-- navigation -->
+      <div class="navbar navbar-expand-lg navbar-dark bg-secondary py-5">
+        <div class="container-lg">
+          <div class="nav-title">
+            <!-- Logo -->
+            <h1><a href="#">Learn Code</a></h1>
+
+            <!-- Mobile Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#gnb"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="mobile_btn"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <div class="col-lg-4 text-end sns-group">
-            <a href="#" class="btn btn-warning text-white"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="btn btn-warning text-white"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="btn btn-warning text-white"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="btn btn-warning text-white"><i class="bi bi-linkedin"></i></a>
+
+          <!-- Gnb -->
+          <div class="collapse navbar-collapse" id="gnb">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#service">Service</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#analysis">Analysis</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#faq">Faq</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-
-    <!-- navigation -->
-    <div class="navbar navbar-expand-lg navbar-dark bg-secondary py-5">
-      <div class="container-lg">
-  
-        <div class="nav-title">          
-          <!-- Logo -->
-          <h1><a href="#">Learn Code</a></h1>
-
-          <!-- Mobile Button -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gnb" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="mobile_btn">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-  
-        <!-- Gnb -->
-        <div class="collapse navbar-collapse" id="gnb">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item px-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#service">Service</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#analysis">Analysis</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#team">Team</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#faq">Faq</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-  
-      </div>
-    </div>
-
-  </div>
-
-
-  <div id="wrap" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
-
-    <!-- intro Area Start -->
-    <div id="intro">
-      <div class="container">
-        <div class="row">
-          <!-- left-box -->
-          <div class="col-lg-6 align-self-center">
-            <h2 class="mb-4">Let's Learn Coding</h2>
-            <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non dolorum omnis beatae possimus? Perferendis, minima ut? Sint architecto, eius exercitationem explicabo odit quas animi aliquid adipisci natus odio a.</p>
-            <a href="#" class="btn btn-customcolor1" data-bs-toggle="modal" data-bs-target="#popup1">Join Now</a>
-            <!-- Modal Popup -->
-            <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <form action="">
-                    <!-- Modal Header Start -->
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalLabel">Join Now</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <!-- Modal Body Start -->
-                    <div class="modal-body">
-                      <h2 class="fs-3 my-3">Fill out this form</h2>
-    
-                      <!-- Form Content -->
-                      <div class="mb-3">
-                        <label for="input_name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="input_name" placeholder="Your Name">
-                      </div>
-                      <div class="mb-3">
-                        <label for="input_email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="input_email" placeholder="Your E-mail">
-                      </div>
-                      <div class="mb-3">
-                        <label for="input_msg" class="form-label">Example textarea</label>
-                        <textarea class="form-control" id="input_msg" rows="3"></textarea>
-                      </div>
-                    </div>
-                    <!-- Modal Footer Start -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="submit" class="btn btn-primary">SUBMIT</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- right-box -->
-          <div class="col-lg-6">
-            <img src="../image/coder.svg" alt="코더 이미지" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- service Area Start -->
-    <div id="service">
-      <div class="container text-center">
-         <!-- Title -->
-        <div class="row title mb-5">
-          <div class="col-sm-12">
-            <h2 class="mb-4">Our Service</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim aliquid sapiente, laborum ipsum tenetur nemo officiis molestias voluptatum et.</p>
-          </div>
-        </div>
-        <!-- Content -->
-        <div class="row content">
-          <div class="col-lg-4">
-    
-            <div class="card py-4">
-              <div class="card-body">
-                <i class="bi bi-gear"></i>
-                <h5 class="card-title mb-4">Easy to Use</h5>
-                <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-customcolor3">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card py-4">
-              <div class="card-body">
-                <i class="bi bi-graph-up"></i>
-                <h5 class="card-title mb-4">Awesome Design</h5>
-                <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-customcolor3">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card py-4">
-              <div class="card-body">
-                <i class="bi bi-people"></i>
-                <h5 class="card-title mb-4">Easy to Customize</h5>
-                <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-customcolor3">Learn More</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- analysis Area Start -->
-    <div id="analysis">
-      <div class="container">
-        <div class="row">
-          <!-- left-box -->
-          <div class="col-lg-6">
-            <img src="../image/Investing.svg" alt="통계 이미지" class="img-fluid">
-          </div>
-          <!-- right-box -->
-          <div class="col-lg-6 align-self-center">
-            <h2 class="mb-4">
-              Analysis for Business Oppertunities
-            </h2>
-            <p class="mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non dolorum omnis beatae possimus? Perferendis, minima ut? Sint architecto, eius exercitationem explicabo odit quas animi aliquid adipisci natus odio a.</p>
-            <a href="#" class="btn btn-primary">
-              See More Information
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- team Area Start -->
-    <div id="team">
-      <div class="container text-center">
-         <!-- Title -->
-        <div class="row title mb-5">
-          <div class="col-sm-12">
-            <h2 class="mb-4">Our Team</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, nemo?</p>
-          </div>
-        </div>
-        <!-- Content -->
-        <div class="row content">
-          <div class="col-lg-4">
-    
-            <div class="card py-4">
-              <div class="card-body">
-                <img src="../image/team_01.jpg" alt="팀이미지1" class="img-fluid mb-5">
-                <h3 class="card-title mb-2 h4">David Clark</h3>
-                <div class="job mb-4">Web Designer</div>
-                <p>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card py-4">
-              <div class="card-body">
-                <img src="../image/team_02.jpg" alt="팀이미지2" class="img-fluid mb-5">
-                <h3 class="card-title mb-2 h4">Poll Clark</h3>
-                <div class="job mb-4">Graphic Designer</div>
-                <p>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card py-4">
-              <div class="card-body">
-                <img src="../image/team_03.jpg" alt="팀이미지3" class="img-fluid mb-5">
-                <h3 class="card-title mb-2 h4">Johe Clark</h3>
-                <div class="job mb-4">Web Developer</div>
-                <p>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
-                  <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- faq Area Start -->
-    <div id="faq">
-      <div class="container">
-        <div class="row">
-          <!-- left-box -->
-          <div class="col-lg-5">
-            <img src="../image/faq.svg" alt="FAQ 이미지" class="img-fluid">
-          </div>
-          <!-- right-box -->
-          <div class="col-lg-7">
-            <h2 class="mb-4">FAQ Area</h2>
-    
-            <!-- Accordion -->
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Accordion Item1
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Accordion Item2
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Accordion Item3
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- contact Area Start -->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <!-- left-box -->
-          <div class="col-lg-7">
-            <h2 class="mb-4">Contact Us</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing.
-            </p>
-            <!-- Form -->
-            <form action="">
-              <div class="row mb-3">
-                <div class="col-lg-6">
-                  <label for="input_name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="input_name" placeholder="your name">
-                </div>
-                <div class="col-lg-6">
-                  <label for="input_phone" class="form-label">Phone</label>
-                  <input type="tel" class="form-control" id="input_phone" placeholder="your phone">
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="input_email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="input_email" placeholder="name@example.com">
-              </div>
-              <div class="mb-3">
-                <label for="input_msg" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="input_msg" rows="3"></textarea>
-              </div>
-              <p>
-                <input type="submit" value="Send Message" id="input_submit" class="btn btn-primary">
+    <div id="wrap" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+      <!-- intro Area Start -->
+      <div id="intro">
+        <div class="container">
+          <div class="row">
+            <!-- left-box -->
+            <div class="col-lg-6 align-self-center">
+              <h2 class="mb-4">Let's Learn Coding</h2>
+              <p class="mb-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non dolorum omnis beatae possimus? Perferendis, minima ut? Sint
+                architecto, eius exercitationem explicabo odit quas animi aliquid adipisci natus odio a.
               </p>
-            </form>
+              <a href="#" class="btn btn-customcolor1" data-bs-toggle="modal" data-bs-target="#popup1">Join Now</a>
+              <!-- Modal Popup -->
+              <div class="modal fade" id="popup1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <form action="">
+                      <!-- Modal Header Start -->
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Join Now</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <!-- Modal Body Start -->
+                      <div class="modal-body">
+                        <h2 class="fs-3 my-3">Fill out this form</h2>
+
+                        <!-- Form Content -->
+                        <div class="mb-3">
+                          <label for="input_name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="input_name" placeholder="Your Name" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="input_email" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="input_email" placeholder="Your E-mail" />
+                        </div>
+                        <div class="mb-3">
+                          <label for="input_msg" class="form-label">Example textarea</label>
+                          <textarea class="form-control" id="input_msg" rows="3"></textarea>
+                        </div>
+                      </div>
+                      <!-- Modal Footer Start -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- right-box -->
+            <div class="col-lg-6">
+              <img src="../image/coder.svg" alt="코더 이미지" class="img-fluid" />
+            </div>
           </div>
-          <!-- right-box -->
-          <div class="col-lg-5">
-    
-            <!-- Google Map -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.5848026937897!2d126.9751143150982!3d37.564844831983095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f2e5d13fcf%3A0x9d4625bb15c82425!2z7ISc7Jq47Yq567OE7IucIOyLnOyyreyVng!5e0!3m2!1sko!2skr!4v1675931304098!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- service Area Start -->
+      <div id="service">
+        <div class="container text-center">
+          <!-- Title -->
+          <div class="row title mb-5">
+            <div class="col-sm-12">
+              <h2 class="mb-4">Our Service</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim aliquid sapiente, laborum ipsum tenetur nemo officiis molestias
+                voluptatum et.
+              </p>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="row content">
+            <div class="col-lg-4">
+              <div class="card py-4">
+                <div class="card-body">
+                  <i class="bi bi-gear"></i>
+                  <h5 class="card-title mb-4">Easy to Use</h5>
+                  <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-customcolor3">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card py-4">
+                <div class="card-body">
+                  <i class="bi bi-graph-up"></i>
+                  <h5 class="card-title mb-4">Awesome Design</h5>
+                  <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-customcolor3">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card py-4">
+                <div class="card-body">
+                  <i class="bi bi-people"></i>
+                  <h5 class="card-title mb-4">Easy to Customize</h5>
+                  <p class="card-text mb-5">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-customcolor3">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- analysis Area Start -->
+      <div id="analysis">
+        <div class="container">
+          <div class="row">
+            <!-- left-box -->
+            <div class="col-lg-6">
+              <img src="../image/Investing.svg" alt="통계 이미지" class="img-fluid" />
+            </div>
+            <!-- right-box -->
+            <div class="col-lg-6 align-self-center">
+              <h2 class="mb-4">Analysis for Business Oppertunities</h2>
+              <p class="mb-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum non dolorum omnis beatae possimus? Perferendis, minima ut? Sint
+                architecto, eius exercitationem explicabo odit quas animi aliquid adipisci natus odio a.
+              </p>
+              <a href="#" class="btn btn-primary"> See More Information </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- team Area Start -->
+      <div id="team">
+        <div class="container text-center">
+          <!-- Title -->
+          <div class="row title mb-5">
+            <div class="col-sm-12">
+              <h2 class="mb-4">Our Team</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, nemo?</p>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="row content">
+            <div class="col-lg-4">
+              <div class="card py-4">
+                <div class="card-body">
+                  <img src="../image/team_01.jpg" alt="팀이미지1" class="img-fluid mb-5" />
+                  <h3 class="card-title mb-2 h4">David Clark</h3>
+                  <div class="job mb-4">Web Designer</div>
+                  <p>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card py-4">
+                <div class="card-body">
+                  <img src="../image/team_02.jpg" alt="팀이미지2" class="img-fluid mb-5" />
+                  <h3 class="card-title mb-2 h4">Poll Clark</h3>
+                  <div class="job mb-4">Graphic Designer</div>
+                  <p>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card py-4">
+                <div class="card-body">
+                  <img src="../image/team_03.jpg" alt="팀이미지3" class="img-fluid mb-5" />
+                  <h3 class="card-title mb-2 h4">Johe Clark</h3>
+                  <div class="job mb-4">Web Developer</div>
+                  <p>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-primary"><i class="bi bi-youtube"></i></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- faq Area Start -->
+      <div id="faq">
+        <div class="container">
+          <div class="row">
+            <!-- left-box -->
+            <div class="col-lg-5">
+              <img src="../image/faq.svg" alt="FAQ 이미지" class="img-fluid" />
+            </div>
+            <!-- right-box -->
+            <div class="col-lg-7">
+              <h2 class="mb-4">FAQ Area</h2>
+
+              <!-- Accordion -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Accordion Item1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we
+                      use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                      You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                      can go within the .accordion-body, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Accordion Item2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we
+                      use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                      You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                      can go within the .accordion-body, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Accordion Item3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we
+                      use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                      You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
+                      can go within the .accordion-body, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- contact Area Start -->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <!-- left-box -->
+            <div class="col-lg-7">
+              <h2 class="mb-4">Contact Us</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+              <!-- Form -->
+              <form action="">
+                <div class="row mb-3">
+                  <div class="col-lg-6">
+                    <label for="input_name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="input_name" placeholder="your name" />
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="input_phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="input_phone" placeholder="your phone" />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="input_email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="input_email" placeholder="name@example.com" />
+                </div>
+                <div class="mb-3">
+                  <label for="input_msg" class="form-label">Example textarea</label>
+                  <textarea class="form-control" id="input_msg" rows="3"></textarea>
+                </div>
+                <p>
+                  <input type="submit" value="Send Message" id="input_submit" class="btn btn-primary" />
+                </p>
+              </form>
+            </div>
+            <!-- right-box -->
+            <div class="col-lg-5">
+              <!-- Google Map -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.5848026937897!2d126.9751143150982!3d37.564844831983095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f2e5d13fcf%3A0x9d4625bb15c82425!2z7ISc7Jq47Yq567OE7IucIOyLnOyyreyVng!5e0!3m2!1sko!2skr!4v1675931304098!5m2!1sko!2skr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer Area Start -->
+      <div id="footer" class="py-4 bg-secondary text-white text-center">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-sm-12">
+              <p class="m-0">Copyrights &copy; 2023. All Rights Reserved.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <!-- footer Area Start -->
-    <div id="footer" class="py-4 bg-secondary text-white text-center">
-      <div class="container-lg">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="m-0">
-              Copyrights &copy; 2023. All Rights Reserved.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-
-  <!-- jQuery Insert -->
-  <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>  
-  <script src='../js/sticky.js'></script>
-  
-</body>
+    <!-- jQuery Insert -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="../js/sticky.js"></script>
+  </body>
 </html>
